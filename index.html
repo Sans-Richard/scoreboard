@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AddRmsNormBias 提交追踪</title>
+<script src="chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --blue: #58a6ff;
+    --orange: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    padding: 20px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header h1 { font-size: 22px; }
+  .header .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .stat-card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  .stat-card .value { font-size: 24px; font-weight: 600; }
+  .stat-card .value.green { color: var(--green); }
+  .stat-card .value.red { color: var(--red); }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .card h2 { font-size: 16px; margin-bottom: 16px; }
+  .chart-wrap { position: relative; height: 320px; }
+  /* git graph */
+  .graph { overflow: auto; max-height: 40vh; border: 1px solid var(--border); border-radius: 8px; }
+  .graph-svg {
+    display: block;
+    min-width: 600px;
+    width: 100%;
+  }
+  .legend { display: flex; gap: 16px; margin-bottom: 12px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 500; }
+  #detail-table thead th { position: sticky; top: 0; background: #161b22; z-index: 5; box-shadow: 0 1px 0 var(--border); }
+  tr:hover td { background: rgba(255,255,255,0.03); }
+  .badge { padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+  .badge.pass { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge.fail { background: rgba(248,81,73,0.15); color: var(--red); }
+  .case-grid { display: grid; grid-template-columns: repeat(15, minmax(46px, 1fr)); gap: 4px; }
+  .case-cell { text-align: center; font-size: 11px; padding: 4px 2px; border-radius: 4px; }
+  .case-cell .t { color: var(--text); }
+  .case-cell .b { color: rgba(255,255,255,0.55); font-size: 10px; }
+  .best-row .case-cell { background: rgba(88,166,255,0.12); border: 1px solid rgba(88,166,255,0.3); }
+  .best-row td { font-weight: 600; color: var(--blue); }
+  .best-row .case-cell .b { color: var(--blue); }
+  .tooltip { position: fixed; display: none; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px; font-size: 12px; z-index: 100; max-width: 320px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  .tooltip .row { display: flex; justify-content: space-between; gap: 16px; padding: 2px 0; }
+  .tooltip .row .k { color: var(--muted); }
+  .controls { margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+  .controls label { margin-right: 16px; cursor: pointer; }
+  .controls input { margin-right: 4px; }
+  .src-btn { background: rgba(88,166,255,0.1); color: var(--blue); border: 1px solid rgba(88,166,255,0.3);
+    border-radius: 4px; padding: 2px 10px; font-size: 12px; cursor: pointer; }
+  .src-btn:hover:not(:disabled) { background: rgba(88,166,255,0.2); }
+  .src-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: none;
+    align-items: center; justify-content: center; z-index: 200; }
+  .modal { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    width: 90%; max-width: 1000px; max-height: 85vh; display: flex; flex-direction: column; }
+  .modal-header { display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  .modal-header h3 { font-size: 15px; }
+  .modal-close { background: none; border: none; color: var(--muted); font-size: 20px;
+    cursor: pointer; padding: 0 6px; line-height: 1; }
+  .modal-close:hover { color: var(--text); }
+  .modal-body { overflow: auto; padding: 16px; }
+  .modal-body pre { margin: 0; font-family: "SF Mono", Consolas, "Courier New", monospace;
+    font-size: 12px; line-height: 1.5; white-space: pre-wrap; word-break: break-all; color: var(--text); }
+  .code-wrap { margin: 0; overflow: auto; max-height: 70vh; }
+  .code-line { display: flex; font-family: "SF Mono", Consolas, "Courier New", monospace;
+    font-size: 12px; line-height: 1.5; }
+  .code-num { color: var(--muted); text-align: right; padding-right: 16px; min-width: 48px;
+    user-select: none; border-right: 1px solid var(--border); margin-right: 12px; flex-shrink: 0; }
+  .code-text { white-space: pre-wrap; word-break: break-all; color: var(--text); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>AddRmsNormBias 提交追踪</h1>
+    <div class="sub">2026年CANN挑战赛 · 西南赛区（初赛） · 实时成绩换算</div>
+  </div>
+  <div id="last-update" class="sub"></div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="label">提交总数</div>
+    <div class="value" id="stat-total">-</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">当前成绩（均值分）</div>
+    <div class="value green" id="stat-score">-</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">队伍排名</div>
+    <div class="value" id="stat-rank">-</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">历史最优成绩</div>
+    <div class="value green" id="stat-best">-</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">全部通过数</div>
+    <div class="value" id="stat-pass">-</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>提交历史（Git Graph）</h2>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--green)"></span>Pass</span>
+    <span><span class="dot" style="background:var(--red)"></span>Error</span>
+    <span><span class="dot" style="background:var(--orange)"></span>Fail</span>
+  </div>
+  <div class="graph">
+    <svg id="graph" class="graph-svg" viewBox="0 0 900 100"></svg>
+  </div>
+</div>
+
+<div class="card">
+  <h2>成绩浮动（当前成绩换算）</h2>
+  <div class="chart-wrap"><canvas id="scoreChart"></canvas></div>
+</div>
+
+<div class="card">
+  <h2>提交明细</h2>
+  <div class="controls">
+    <label><input type="checkbox" id="onlyPass" checked> 仅显示 Pass</label>
+  </div>
+  <div id="table-wrap" style="overflow:auto; max-height:45vh; border:1px solid var(--border); border-radius:8px;">
+    <table id="detail-table">
+      <thead>
+        <tr>
+          <th>提交</th><th>时间</th><th>状态</th><th>提交者</th><th>提交时成绩</th><th>当前成绩</th>
+          <th>虚拟排名</th><th>源码</th><th colspan="15">15 个 Case（time / 实时最优）</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="modal-overlay" id="srcModal" onclick="if (event.target === this) hideSource()">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="srcModalTitle">源码</h3>
+      <button class="modal-close" onclick="hideSource()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="srcWrap" class="code-wrap"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let rawData = null;
+let scoreChart = null;
+
+const fmt = (v, d=2) => (v == null ? '-' : Number(v).toFixed(d));
+
+async function load() {
+  // 静态站点版本：直接从 data.json 加载（数据由提交时自动更新）
+  const res = await fetch('data.json', {cache: 'no-store'});
+  rawData = await res.json();
+  render();
+}
+
+function render() {
+  const sorted = rawData.submissions.slice().sort((a, b) => a.create_time.localeCompare(b.create_time));
+  const subs = sorted.slice().reverse(); // 旧→新排序后再翻转，git graph 顶部为新
+  const stats = computeStats(subs);
+  document.getElementById('stat-total').textContent = subs.length;
+  document.getElementById('stat-score').textContent = fmt(stats.currentScore);
+  document.getElementById('stat-rank').textContent = stats.currentRank ?? '-';
+  document.getElementById('stat-best').textContent = fmt(stats.bestScore);
+  document.getElementById('stat-pass').textContent = stats.passCount;
+  const lu = new Date().toLocaleString('zh-CN');
+  document.getElementById('last-update').textContent = '页面刷新时间: ' + lu;
+
+  renderGraph(subs);
+  try { renderChart(subs); } catch (e) { console.error('成绩图渲染失败:', e); }
+  renderTable(subs);
+}
+
+function computeStats(subs) {
+  let bestScore = 0, passCount = 0;
+  // subs 已按 create_time 降序（最新在前），取第一个为最新提交
+  const last = subs[0];
+  for (const s of subs) {
+    if (s.score > bestScore) bestScore = s.score;
+    if (s.status === 'Pass') passCount++;
+  }
+  return {
+    currentScore: last?.current_score ?? 0,
+    currentRank: last?.current_ranking,
+    bestScore,
+    passCount,
+  };
+}
+
+function nodeColor(s) {
+  if (s.status === 'Pass') return '#3fb950';
+  if (s.status === 'Fail') return '#d29922';
+  return '#f85149';
+}
+
+function renderGraph(subs) {
+  const svg = document.getElementById('graph');
+  const W = 900, H = 100;
+  const n = subs.length;
+  const rowH = 24;
+  const maxH = Math.max(H, n * rowH + 40);
+  svg.setAttribute('viewBox', `0 0 ${W} ${maxH}`);
+  svg.style.height = maxH + 'px';
+
+  const y0 = 14;
+  const xMain = 40;
+  const labelX = xMain + 28;
+  const detailX = labelX + 100;
+
+  // trunk line
+  const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  line.setAttribute('x1', xMain); line.setAttribute('y1', y0);
+  line.setAttribute('x2', xMain); line.setAttribute('y2', y0 + Math.max(0, n-1) * rowH);
+  line.setAttribute('stroke', '#30363d'); line.setAttribute('stroke-width', '2');
+  svg.appendChild(line);
+
+  // find best submission index
+  let bestIdx = 0, bestScore = -1;
+  subs.forEach((s, i) => { if (s.score > bestScore) { bestScore = s.score; bestIdx = i; } });
+
+  // labels column separators
+  const sep = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  sep.setAttribute('x1', detailX); sep.setAttribute('y1', 0); sep.setAttribute('x2', detailX); sep.setAttribute('y2', maxH);
+  sep.setAttribute('stroke', '#21262d'); sep.setAttribute('stroke-width', '1');
+  svg.appendChild(sep);
+
+  subs.forEach((s, i) => {
+    const y = y0 + i * rowH;
+
+    // node
+    const node = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    node.setAttribute('cx', xMain); node.setAttribute('cy', y);
+    node.setAttribute('r', i === bestIdx ? 7 : 5);
+    node.setAttribute('fill', nodeColor(s));
+    if (i === bestIdx) {
+      const halo = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      halo.setAttribute('cx', xMain); halo.setAttribute('cy', y);
+      halo.setAttribute('r', 10); halo.setAttribute('fill', 'none');
+      halo.setAttribute('stroke', nodeColor(s)); halo.setAttribute('stroke-width', '1');
+      halo.setAttribute('opacity', '0.5');
+      svg.appendChild(halo);
+    }
+    svg.appendChild(node);
+
+    // label (time)
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', labelX); t.setAttribute('y', y + 4);
+    t.setAttribute('font-size', '11'); t.setAttribute('fill', nodeColor(s));
+    t.textContent = s.label + (s.status === 'Pass' ? '' : ' ✗');
+    svg.appendChild(t);
+
+    // detail text: score / current_score / virtual rank
+    const d = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    d.setAttribute('x', detailX); d.setAttribute('y', y + 4);
+    d.setAttribute('font-size', '11');
+    d.setAttribute('fill', '#8b949e');
+    const dScore = s.status === 'Pass' ? `当时 ${fmt(s.score)}  当前 ${fmt(s.current_score)}` : 'error';
+    d.textContent = `${dScore}  当时 #${s.ranking ?? '-'}  虚拟 #${s.current_ranking ?? '-'}`;
+    svg.appendChild(d);
+
+    // branch to node (short horizontal)
+    if (i > 0) {
+      const br = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      br.setAttribute('x1', xMain); br.setAttribute('y1', y - rowH);
+      br.setAttribute('x2', xMain); br.setAttribute('y2', y);
+      br.setAttribute('stroke', '#30363d'); br.setAttribute('stroke-width', '1');
+      svg.appendChild(br);
+    }
+
+    // tooltip on node
+    node.addEventListener('mousemove', (e) => showTooltip(e, s));
+    node.addEventListener('mouseleave', hideTooltip);
+  });
+}
+
+function showTooltip(e, s) {
+  const tip = document.getElementById('tooltip');
+  let cases = s.cases || [];
+  const gbest = rawData.global_best_times || [];
+  let rows = '';
+  if (s.status === 'Pass') {
+    cases.forEach((c, i) => {
+      const bt = (gbest.length > i && gbest[i] > 0) ? gbest[i] : (c.best_time || 0);
+      rows += `<div class="row"><span class="k">Case ${i+1}</span>` +
+        `<span>${fmt(c.time,2)} / 实时最优 ${fmt(bt,2)} ${c.status==='Pass'?'✓':'✗'}</span></div>`;
+    });
+  } else {
+    rows = `<div class="row"><span class="k">错误信息</span><span style="color:var(--red)">${s.status}</span></div>`;
+    if (cases.length && cases[0].msg) {
+      rows += `<div class="row" style="color:var(--muted)">${cases[0].msg}</div>`;
+    }
+  }
+  tip.innerHTML = `<div style="font-weight:600;margin-bottom:6px">${s.label} (${s.id.slice(-6)})</div>
+    <div class="row"><span class="k">状态</span><span>${s.status}</span></div>
+    <div class="row"><span class="k">提交者</span><span>${s.submitter || '-'}</span></div>
+    <div class="row"><span class="k">提交时成绩</span><span>${s.status==='Pass'?fmt(s.score):'error'}</span></div>
+    <div class="row"><span class="k">当前成绩</span><span>${s.status==='Pass'?fmt(s.current_score):'error'}</span></div>
+    <div class="row"><span class="k">提交时排名</span><span>#${s.ranking ?? '-'}</span></div>
+    <div class="row"><span class="k">虚拟排名（实时榜单）</span><span>#${s.current_ranking ?? '-'}</span></div>
+    <hr style="border:none;border-top:1px solid var(--border);margin:6px 0">
+    ${rows}`;
+  tip.style.display = 'block';
+  tip.style.left = (e.clientX + 16) + 'px';
+  tip.style.top = (e.clientY - 12) + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+function renderChart(subs) {
+  const ctx = document.getElementById('scoreChart').getContext('2d');
+  if (scoreChart) scoreChart.destroy();
+
+  const chartWrap = document.querySelector('.chart-wrap');
+  chartWrap.style.height = '360px';
+
+  const oldestFirst = subs.slice().reverse(); // x-axis: oldest → newest (left to right)
+  const labels = oldestFirst.map(s => s.label);
+  const passData = oldestFirst.map(s => s.status === 'Pass' ? (s.current_score ?? s.score) : null);
+  const failData = oldestFirst.map(s => s.status !== 'Pass' ? null : null);
+  const rankData = oldestFirst.map(s => s.status === 'Pass' ? (s.current_ranking ?? null) : null);
+
+  const vals = passData.filter(v => v != null);
+  const rankVals = rankData.filter(v => v != null);
+  let yMin = 0, yMax = 100;
+  if (vals.length) {
+    yMin = Math.min(...vals);
+    yMax = Math.max(...vals);
+    if (yMin === yMax) {
+      const d = Math.max(Math.abs(yMin) * 0.01, 0.5);
+      yMin -= d; yMax += d;
+    } else {
+      const pad = (yMax - yMin) * 0.1;
+      yMin -= pad; yMax += pad;
+    }
+  }
+  let rankMin = 0, rankMax = 300;
+  if (rankVals.length) {
+    rankMin = Math.min(...rankVals);
+    rankMax = Math.max(...rankVals);
+    const pad = Math.max((rankMax - rankMin) * 0.1, 10);
+    rankMin = Math.max(1, rankMin - pad);
+    rankMax += pad;
+  }
+
+  try {
+    scoreChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: '当前成绩',
+            data: passData,
+            borderColor: '#3fb950',
+            backgroundColor: 'rgba(63,185,80,0.1)',
+            fill: true,
+            tension: 0.3,
+            spanGaps: true,
+            pointRadius: 5,
+            yAxisID: 'y',
+          },
+          {
+            label: '当前成绩 (Error)',
+            data: failData,
+            borderColor: '#f85149',
+            backgroundColor: 'rgba(248,81,73,0.05)',
+            fill: false,
+            tension: 0.3,
+            spanGaps: false,
+            pointRadius: 4,
+            pointStyle: 'rectRot',
+            yAxisID: 'y',
+          },
+          {
+            label: '虚拟排名',
+            data: rankData,
+            borderColor: '#58a6ff',
+            backgroundColor: 'rgba(88,166,255,0.1)',
+            fill: false,
+            tension: 0.3,
+            spanGaps: true,
+            pointRadius: 4,
+            borderDash: [6, 4],
+            yAxisID: 'y1',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { labels: { color: '#e6edf3' } },
+          tooltip: {
+            backgroundColor: '#161b22',
+            borderColor: '#30363d',
+            borderWidth: 1,
+            titleColor: '#e6edf3',
+            bodyColor: '#e6edf3',
+          }
+        },
+        scales: {
+          x: { ticks: { color: '#8b949e', maxRotation: 45 }, grid: { color: 'rgba(255,255,255,0.05)' } },
+          y: { position: 'left', min: yMin, max: yMax, ticks: { color: '#8b949e', precision: 2 }, grid: { color: 'rgba(255,255,255,0.05)' },
+               title: { display: true, text: '成绩（均值分）', color: '#3fb950' } },
+          y1: { position: 'right', min: rankMin, max: rankMax, reverse: true,
+                ticks: { color: '#8b949e', precision: 0 }, grid: { drawOnChartArea: false },
+                title: { display: true, text: '虚拟排名', color: '#58a6ff' } }
+        }
+      }
+    });
+  } catch (e) {
+    console.error('成绩图渲染失败:', e);
+  }
+}
+
+function caseColor(ratio) {
+  // ratio 越接近 1 越绿，越大越红（绿 #3fb950 → 红 #f85149）
+  if (!isFinite(ratio) || ratio <= 0) return 'rgba(255,255,255,0.06)';
+  const t = Math.min((ratio - 1) / 1.5, 1); // ratio=1 → 0，ratio>=2.5 → 1
+  const r = Math.round(63 + (248 - 63) * t);
+  const g = Math.round(185 + (81 - 185) * t);
+  const b = Math.round(80 + (73 - 80) * t);
+  const a = 0.5 + 0.35 * (1 - t); // 越绿越亮
+  return `rgba(${r},${g},${b},${a.toFixed(2)})`;
+}
+
+function renderTable(subs) {
+  const onlyPass = document.getElementById('onlyPass').checked;
+  const tbody = document.querySelector('#detail-table tbody');
+  tbody.innerHTML = '';
+
+  // 全局最优时间行（所有选手每个 case 的最优值，实时获取）
+  const gbest = rawData.global_best_times || [];
+  if (gbest.length) {
+    const gtr = document.createElement('tr');
+    gtr.className = 'best-row';
+    gtr.innerHTML = `
+      <td>全局最优</td>
+      <td style="color:var(--muted)">—</td>
+      <td><span class="badge pass">best</span></td>
+      <td style="color:var(--muted)">—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>`;
+    const gtd = document.createElement('td');
+    gtd.colSpan = 15;
+    let gcells = '<div class="case-grid">';
+    for (let i = 0; i < 15; i++) {
+      gcells += `<div class="case-cell"><div class="t">${fmt(gbest[i],1)}</div><div class="b">μs</div></div>`;
+    }
+    gcells += '</div>';
+    gtd.innerHTML = gcells;
+    gtr.appendChild(gtd);
+    tbody.appendChild(gtr);
+  }
+
+  const rows = onlyPass ? subs.filter(s => s.status === 'Pass') : subs;
+
+  for (const s of rows) {
+    const tr = document.createElement('tr');
+    const cases = s.cases || [];
+    const isErr = s.status !== 'Pass';
+    tr.innerHTML = `
+      <td>${s.label}</td>
+      <td style="color:var(--muted)">${s.create_time.replace('T',' ').slice(5,16)}</td>
+      <td><span class="badge ${s.status==='Pass'?'pass':'fail'}">${isErr?'error':s.status}</span></td>
+      <td>${s.submitter || '-'}</td>
+      <td>${isErr?'error':fmt(s.score)}</td>
+      <td style="color:var(--green)">${isErr?'error':fmt(s.current_score)}</td>
+      <td>#${s.current_ranking ?? '-'}</td>
+      <td><button class="src-btn" onclick="showSource('${s.id}')" ${s.source ? '' : 'disabled'}>${s.source ? '源码' : '—'}</button></td>`;
+    const td = document.createElement('td');
+    td.colSpan = 15;
+    if (isErr) {
+      td.innerHTML = `<span style="color:var(--red);font-size:12px">${s.status}${cases.length && cases[0].msg ? ' — ' + cases[0].msg : ''}</span>`;
+    } else {
+      let cells = '<div class="case-grid">';
+      cases.forEach((c, i) => {
+        // 实时最优来自 global_best_times（平台实时获取），而非提交时爬取的 best_time
+        const bt = (gbest.length > i && gbest[i] > 0) ? gbest[i] : (c.best_time || 0);
+        const ratio = (bt > 0 && c.time > 0) ? (c.time / bt) : null;
+        const bg = ratio != null ? caseColor(ratio) : '';
+        cells += `<div class="case-cell" style="${bg?'background:'+bg+';':''}${c.status!=='Pass'?'color:var(--red)':''}"
+          title="Case ${i+1}: ${fmt(c.time,3)} / 实时最优 ${fmt(bt,3)} μs (ratio ${ratio!=null?ratio.toFixed(2):'-'})">
+          <div class="t">${fmt(c.time,1)}</div><div class="b">${fmt(bt,1)}</div></div>`;
+      });
+      cells += '</div>';
+      td.innerHTML = cells;
+    }
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+}
+
+document.getElementById('onlyPass').addEventListener('change', () => render());
+
+function showSource(sid) {
+  const s = rawData.submissions.find(x => x.id === sid);
+  if (!s || !s.source) return;
+  document.getElementById('srcModalTitle').textContent = s.label + ' — ' + s.id.slice(-6);
+  const wrap = document.getElementById('srcWrap');
+  const lines = s.source.split('\n');
+  // cap at 5000 lines to avoid massive DOM
+  const display = lines.length > 5000 ? lines.slice(0, 5000) : lines;
+  wrap.innerHTML = display.map((line, i) =>
+    `<div class="code-line"><span class="code-num">${i + 1}</span><span class="code-text">${line || ' '}</span></div>`
+  ).join('');
+  document.getElementById('srcModal').style.display = 'flex';
+}
+function hideSource() {
+  document.getElementById('srcModal').style.display = 'none';
+}
+load();
+</script>
+</body>
+</html>
