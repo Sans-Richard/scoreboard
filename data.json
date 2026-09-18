@@ -50,6 +50,55 @@
       "current_ranking": null
     },
     {
+      "id": "6a995dd9bf41025d60dea363",
+      "create_time": "2026-09-03T11:45:29.019Z",
+      "label": "09-03 19:45",
+      "status": "Wrong Answer",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.52,
+          "best_time": 2.86,
+          "status": "Wrong Answer",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 3.94,
+          "best_time": 4.76,
+          "status": "Wrong Answer",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 2.9,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 3.3,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 19.02,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
       "id": "6a9b717dbf41025d60330696",
       "create_time": "2026-09-05T01:33:49.576Z",
       "label": "09-05 09:33",
@@ -144,8 +193,841 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 28.0,
-      "current_ranking": 156
+      "current_score": 32.9,
+      "current_ranking": 212
+    },
+    {
+      "id": "6a9cf603bf41025d609f6f17",
+      "create_time": "2026-09-06T05:11:31.630Z",
+      "label": "09-06 13:11",
+      "status": "Wrong Answer",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 5.38,
+          "best_time": 1.47,
+          "status": "Wrong Answer",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 3.45,
+          "best_time": 2.16,
+          "status": "Wrong Answer",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 5.01,
+          "best_time": 2.54,
+          "status": "Wrong Answer",
+          "precision": 3.0517578125e-05,
+          "msg": null
+        },
+        {
+          "time": 21.58,
+          "best_time": 3.23,
+          "status": "Wrong Answer",
+          "precision": 0.0009052157993933996,
+          "msg": null
+        },
+        {
+          "time": 37.74,
+          "best_time": 5.32,
+          "status": "Wrong Answer",
+          "precision": 0.000888824462890625,
+          "msg": null
+        },
+        {
+          "time": 38.76,
+          "best_time": 11.89,
+          "status": "Wrong Answer",
+          "precision": 0.001090491305279162,
+          "msg": null
+        },
+        {
+          "time": 72.28,
+          "best_time": 15.99,
+          "status": "Wrong Answer",
+          "precision": 0.0009620823053725358,
+          "msg": null
+        },
+        {
+          "time": 215.72,
+          "best_time": 17.57,
+          "status": "Wrong Answer",
+          "precision": 0.0008827209472656028,
+          "msg": null
+        },
+        {
+          "time": 120.16,
+          "best_time": 50.61,
+          "status": "Wrong Answer",
+          "precision": 8.948644002282347e-05,
+          "msg": null
+        },
+        {
+          "time": 182.68,
+          "best_time": 47.34,
+          "status": "Wrong Answer",
+          "precision": 0.0009043216705322266,
+          "msg": null
+        },
+        {
+          "time": 259.71,
+          "best_time": 67.54,
+          "status": "Wrong Answer",
+          "precision": 8.96335898243894e-05,
+          "msg": null
+        },
+        {
+          "time": 271.84,
+          "best_time": 48.62,
+          "status": "Wrong Answer",
+          "precision": 0.00136068281433388,
+          "msg": null
+        },
+        {
+          "time": 786.38,
+          "best_time": 308,
+          "status": "Wrong Answer",
+          "precision": 7.715908266769933e-05,
+          "msg": null
+        },
+        {
+          "time": 51199.94,
+          "best_time": 157.08,
+          "status": "Wrong Answer",
+          "precision": 0.001096188580548274,
+          "msg": null
+        },
+        {
+          "time": 18405.67,
+          "best_time": 8506.03,
+          "status": "Wrong Answer",
+          "precision": 0.0010699106299358885,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
+      "id": "6a9d1defbf41025d60b1e843",
+      "create_time": "2026-09-06T08:01:51.929Z",
+      "label": "09-06 16:01",
+      "status": "Pass",
+      "score": 24.15,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.88,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.08,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 7.06,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 25.12,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 27.34,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 45.47,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 83.45,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 250,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 126.3,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 218.09,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 254.23,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 209.87,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 772.32,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 60198.24,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 14459.82,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 27.25,
+      "current_ranking": 224
+    },
+    {
+      "id": "6a9d2655bf41025d60b4d2ff",
+      "create_time": "2026-09-06T08:37:41.318Z",
+      "label": "09-06 16:37",
+      "status": "Compile Error",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 0,
+          "best_time": 1.47,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 2.16,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 2.54,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 3.23,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 5.32,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 11.89,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 15.99,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 17.57,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 50.61,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 47.34,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 67.54,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 48.62,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 308,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 157.08,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        },
+        {
+          "time": 0,
+          "best_time": 8506.03,
+          "status": "Compile Error",
+          "precision": 0,
+          "msg": "make: Entering directory '<build>'\nmake[1]: Entering directory '<build>'\nmake[2]: Entering directory '<build>'\nmake[2]: Leaving directory '<build>'\nmake[2]: Entering directory '<build>'\n[ 50%] Building ASC object <path>/judge.asc.o\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:152:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/kernel.asc:156:22: error: no template named 'ReduceRepeat' in namespace 'AscendC'; did you mean 'ReduceMean'?\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n            ~~~~~~~~~^~~~~~~~~~~~\n                     ReduceMean\n<ascend><path>/reduce.h:62:24: note: 'ReduceMean' declared here\n__aicore__ inline void ReduceMean(const LocalTensor<T>& dstTensor, const LocalTensor<T>& srcTensor,\n                       ^\nIn file included from <cwd><path>/judge.asc:31:\n<cwd><path>/kernel.asc:156:56: error: no member named 'SUM' in 'AscendC::ReduceType'\n            AscendC::ReduceRepeat<AscendC::ReduceType::SUM, float, float>(\n                                  ~~~~~~~~~~~~~~~~~~~~~^\n<cwd><path>/judge.asc:61:84: warning: data argument not used by format string [-Wformat-extra-args]\n    if (end > 15) { fprintf(stderr, \"[ERROR] case_end(%d) > num_cases(15)\\n\", end, 15); _exit(1); }\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^\n1 warning and 4 errors generated.\nmake[2]: *** [<path>/build.make:76: <path>/judge.asc.o] Error 1\nmake[2]: Leaving directory '<build>'\nmake[1]: *** [CMakeFiles/Makefile2:83: <path>/all] Error 2\nmake[1]: Leaving directory '<build>'\nmake: *** [Makefile:91: all] Error 2\nmake: Leaving directory '<build>'\n"
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
+      "id": "6a9d27f0bf41025d60b55204",
+      "create_time": "2026-09-06T08:44:32.406Z",
+      "label": "09-06 16:44",
+      "status": "Fail",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 0,
+          "best_time": 1.47,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 2.16,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 2.54,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 3.23,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 5.32,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 11.89,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 15.99,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 17.57,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 50.61,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 47.34,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 67.54,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 48.62,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 308,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 157.08,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        },
+        {
+          "time": 0,
+          "best_time": 8506.03,
+          "status": "Fail",
+          "precision": 0,
+          "msg": "Connect Timeout Error (attempted address: 121.37.96.174:8000, timeout: 10000ms)"
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
+      "id": "6a9d2b4abf41025d60b66c18",
+      "create_time": "2026-09-06T08:58:50.364Z",
+      "label": "09-06 16:58",
+      "status": "Runtime Error",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.82,
+          "best_time": 1.47,
+          "status": "Wrong Answer",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 2.16,
+          "status": "Runtime Error",
+          "precision": 0,
+          "msg": "2026-09-06 16:59:11 [INFO]  Op profiling analysis start.\n2026-09-06 16:59:11 [INFO]  Running device task: DeviceProf\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[INFO] <ProfData> Start profiling on device 2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif\n[INFO] <WarmUp> Warm Up enabled. times:5\n[WARN] <ReplayOnce> Kernel run on device 2 No. 1 time failed.\n[ERROR] aclrtSynchronizeStreamWithTimeout failed, ret=507035\n2026-09-06 16:59:13 [WARN]  Child process exited with status 256\n2026-09-06 16:59:15 [ERROR] Get profiling data failed.\n2026-09-06 16:59:15 [WARN]  Profiling running finished. May cause generating performance files to fail.\n2026-09-06 16:59:15 [WARN]  Running task failed, data parsing start\n2026-09-06 16:59:15 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 0\n2026-09-06 16:59:15 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 4.420000\n\tBlock Dim: 1\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:15 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 1\n2026-09-06 16:59:16 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 5.360000\n\tBlock Dim: 1\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:16 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 2\n2026-09-06 16:59:16 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 4.360000\n\tBlock Dim: 1\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:16 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 3\n2026-09-06 16:59:16 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 5.420000\n\tBlock Dim: 1\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:16 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 4\n2026-09-06 16:59:16 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 4.560000\n\tBlock Dim: 1\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:16 [INFO]  Start analyze kernel on device: device2, kernel: _Z24add_rms_norm_bias_customPhS_S_S_S_liif, name is: 5\n2026-09-06 16:59:16 [WARN]  Access profiling data file [/<path>/DeviceProf1.bin] failed, maybe do not contain this file or it is not readable. Some indicators of [] failed to be collected.\n2026-09-06 16:59:16 [WARN]  Get op basic info [Task Duration] failed.\n2026-09-06 16:59:16 [INFO]  Operator Basic Information:\n\n\tOp Name: add_rms_norm_bias_custom\n\tOp Type: vector\n\tTask Duration(us): 0.000000\n\tBlock Dim: 7\n\tMix Block Dim: \n\tDevice Id: 2\n\tPid: 2530486\n\tCurrent Freq: 1650\n\tRated Freq: 1650\n\n2026-09-06 16:59:16 [INFO]  Profiling results saved in /<path>/OPPROF_20260906165911_LUJDBYAQUZPIPAVS\n2026-09-06 16:59:16 [INFO]  Profiling data parse finished.\n2026-09-06 16:59:16 [INFO]  Op profiling finish. Welcome to next use.\n"
+        },
+        {
+          "time": 0,
+          "best_time": 2.54,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 3.23,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 5.32,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 11.89,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 15.99,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 17.57,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 50.61,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 47.34,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 67.54,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 48.62,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 308,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 157.08,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 8506.03,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
+      "id": "6a9d2d4cbf41025d60b71332",
+      "create_time": "2026-09-06T09:07:24.561Z",
+      "label": "09-06 17:07",
+      "status": "Pass",
+      "score": 24.12,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.98,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.88,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 6.81,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 24.28,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.92,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 44.7,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 81.93,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 242.46,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 128.42,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 218.34,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 257.74,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 213.4,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 771.73,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 57710.94,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 14792.7,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 27.21,
+      "current_ranking": 224
+    },
+    {
+      "id": "6a9d2e00bf41025d60b74b81",
+      "create_time": "2026-09-06T09:10:24.662Z",
+      "label": "09-06 17:10",
+      "status": "Pass",
+      "score": 32.29,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 6.4,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.44,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 5.01,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 16.94,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15.28,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 27.75,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 48.06,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 142.24,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 78.76,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 128.44,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 170.43,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 123.9,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 581.6,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39311.1,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9913.11,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 37.72,
+      "current_ranking": 195
     },
     {
       "id": "6a9e30c8bf41025d60f33c02",
@@ -263,8 +1145,365 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 35.16,
+      "current_score": 45.3,
+      "current_ranking": 162
+    },
+    {
+      "id": "6a9eb5ddbf41025d6020f081",
+      "create_time": "2026-09-07T13:02:21.026Z",
+      "label": "09-07 21:02",
+      "status": "Pass",
+      "score": 38.78,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.76,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.37,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.05,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 18.05,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.97,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.05,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 59.03,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39.52,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 69.25,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.68,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 161.25,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.91,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 561.89,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4041.66,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9381.78,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.38,
       "current_ranking": 120
+    },
+    {
+      "id": "6a9ef091c76b321ca6b00b06",
+      "create_time": "2026-09-07T17:12:49.972Z",
+      "label": "09-08 01:12",
+      "status": "Pass",
+      "score": 22.16,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.54,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.53,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 7.49,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 84.36,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 23.82,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 109.61,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 223.92,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 382.79,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 187.16,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 306.58,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 268.95,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 229.46,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 791.37,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 118677.65,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15615.92,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 24.75,
+      "current_ranking": 225
+    },
+    {
+      "id": "6a9ef209c76b321ca6b06735",
+      "create_time": "2026-09-07T17:19:05.929Z",
+      "label": "09-08 01:19",
+      "status": "Pass",
+      "score": 38.94,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.81,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.2,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.85,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.91,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 10.01,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.48,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 58.39,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39.63,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 71.52,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.89,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 160.68,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.95,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 568.99,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4049.17,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9382.84,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.48,
+      "current_ranking": 119
     },
     {
       "id": "6a9f69d1c76b321ca6c78027",
@@ -382,8 +1621,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 39.27,
-      "current_ranking": 98
+      "current_score": 52.88,
+      "current_ranking": 118
     },
     {
       "id": "6a9f7478c76b321ca6cbec49",
@@ -501,8 +1740,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 47.22,
-      "current_ranking": 49
+      "current_score": 60.73,
+      "current_ranking": 70
     },
     {
       "id": "6a9f93bbc76b321ca6d71039",
@@ -620,8 +1859,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 47.72,
-      "current_ranking": 47
+      "current_score": 61.22,
+      "current_ranking": 68
     },
     {
       "id": "6a9f9531c76b321ca6d797ea",
@@ -739,8 +1978,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.18,
-      "current_ranking": 47
+      "current_score": 61.7,
+      "current_ranking": 66
     },
     {
       "id": "6a9fa677c76b321ca6df9655",
@@ -858,8 +2097,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.13,
-      "current_ranking": 47
+      "current_score": 61.71,
+      "current_ranking": 66
     },
     {
       "id": "6aa0dcffc76b321ca63b83b7",
@@ -976,8 +2215,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.25,
-      "current_ranking": 47,
+      "current_score": 61.58,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -1095,8 +2334,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.07,
-      "current_ranking": 47,
+      "current_score": 61.56,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -1333,8 +2572,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.09,
-      "current_ranking": 49,
+      "current_score": 60.62,
+      "current_ranking": 72,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -1452,8 +2691,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.62,
-      "current_ranking": 47,
+      "current_score": 60.96,
+      "current_ranking": 69,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -1571,8 +2810,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.33,
-      "current_ranking": 49,
+      "current_score": 60.26,
+      "current_ranking": 75,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -1690,9 +2929,485 @@
           "msg": null
         }
       ],
-      "current_score": 47.94,
-      "current_ranking": 47,
+      "current_score": 61.44,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
+    },
+    {
+      "id": "6aa178522d3dd2c5aedc2edc",
+      "create_time": "2026-09-09T15:16:34.073Z",
+      "label": "09-09 23:16",
+      "status": "Pass",
+      "score": 38.59,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.3,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.3,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.23,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 18.63,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 10.04,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.14,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 61.4,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39.83,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.23,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.78,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 161.89,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 81.14,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 564.91,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4045.39,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9387.76,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.09,
+      "current_ranking": 122
+    },
+    {
+      "id": "6aa184462d3dd2c5aee062c7",
+      "create_time": "2026-09-09T16:07:34.343Z",
+      "label": "09-10 00:07",
+      "status": "Pass",
+      "score": 38.65,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 3.96,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.31,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.25,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 18.43,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.96,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.86,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 61.18,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 40.18,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 71.1,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.83,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 160.16,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.94,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 565.86,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4048.14,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9392.26,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.22,
+      "current_ranking": 121
+    },
+    {
+      "id": "6aa23ec32d3dd2c5ae0b025d",
+      "create_time": "2026-09-10T05:23:15.378Z",
+      "label": "09-10 13:23",
+      "status": "Pass",
+      "score": 38.69,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 3.77,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.28,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.23,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 18.85,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 10.01,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.15,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 61.11,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39.73,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 71.89,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.76,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 162.18,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.87,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 566.43,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4057.26,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9388.94,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.22,
+      "current_ranking": 121
+    },
+    {
+      "id": "6aa240142d3dd2c5ae0b61f1",
+      "create_time": "2026-09-10T05:28:52.987Z",
+      "label": "09-10 13:28",
+      "status": "Pass",
+      "score": 38.85,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 4.18,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.22,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.06,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 18.94,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.97,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.34,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 61.54,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 39.76,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.48,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 67.63,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 163.02,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 81.02,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 566.59,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4047.43,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9378.79,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 52.32,
+      "current_ranking": 120
     },
     {
       "id": "6aa249832d3dd2c5ae0ede5b",
@@ -1810,8 +3525,127 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 47.81,
-      "current_ranking": 47
+      "current_score": 61.44,
+      "current_ranking": 67
+    },
+    {
+      "id": "6aa27c1e2d3dd2c5ae24c48a",
+      "create_time": "2026-09-10T09:45:02.275Z",
+      "label": "09-10 17:45",
+      "status": "Pass",
+      "score": 34.31,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 5.44,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.4,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.63,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 13.39,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 31.08,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 57.02,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 43.91,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 69.6,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 74.75,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 161.6,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 301.36,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 565.12,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4070.24,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 11373.42,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 44.82,
+      "current_ranking": 163
     },
     {
       "id": "6aa36a7c2d3dd2c5ae765dc6",
@@ -1929,8 +3763,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 47.38,
-      "current_ranking": 49
+      "current_score": 60.6,
+      "current_ranking": 72
     },
     {
       "id": "6aa36ee52d3dd2c5ae77e839",
@@ -2048,8 +3882,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.01,
-      "current_ranking": 47
+      "current_score": 61.21,
+      "current_ranking": 68
     },
     {
       "id": "6aa38a8e2d3dd2c5ae829d8d",
@@ -2165,8 +3999,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.07,
-      "current_ranking": 47,
+      "current_score": 61.54,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -2285,8 +4119,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.17,
-      "current_ranking": 47
+      "current_score": 61.67,
+      "current_ranking": 67
     },
     {
       "id": "6aa4d6c02d3dd2c5aef2ee6b",
@@ -2404,8 +4238,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.21,
-      "current_ranking": 47
+      "current_score": 61.82,
+      "current_ranking": 63
     },
     {
       "id": "6aa50f802d3dd2c5ae0a0ed4",
@@ -2521,8 +4355,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.99,
-      "current_ranking": 47,
+      "current_score": 61.69,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -2759,8 +4593,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.07,
-      "current_ranking": 47,
+      "current_score": 61.81,
+      "current_ranking": 64,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -2878,8 +4712,8 @@
           "msg": null
         }
       ],
-      "current_score": 46.88,
-      "current_ranking": 50,
+      "current_score": 60.06,
+      "current_ranking": 77,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -2997,8 +4831,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.49,
-      "current_ranking": 45,
+      "current_score": 62.16,
+      "current_ranking": 62,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -3592,8 +5426,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.09,
-      "current_ranking": 47,
+      "current_score": 61.83,
+      "current_ranking": 63,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -3711,8 +5545,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.56,
-      "current_ranking": 47,
+      "current_score": 61.09,
+      "current_ranking": 69,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -3830,8 +5664,8 @@
           "msg": null
         }
       ],
-      "current_score": 34.06,
-      "current_ranking": 131,
+      "current_score": 40.46,
+      "current_ranking": 185,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -3949,8 +5783,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.92,
-      "current_ranking": 47,
+      "current_score": 61.72,
+      "current_ranking": 66,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4068,8 +5902,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.96,
-      "current_ranking": 47,
+      "current_score": 61.75,
+      "current_ranking": 64,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4187,8 +6021,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.77,
-      "current_ranking": 47,
+      "current_score": 61.67,
+      "current_ranking": 67,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4306,8 +6140,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.52,
-      "current_ranking": 44,
+      "current_score": 62.32,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4425,8 +6259,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.32,
-      "current_ranking": 47,
+      "current_score": 61.91,
+      "current_ranking": 63,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4544,8 +6378,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.59,
-      "current_ranking": 41,
+      "current_score": 62.52,
+      "current_ranking": 60,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4663,8 +6497,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.56,
-      "current_ranking": 43,
+      "current_score": 62.46,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4782,8 +6616,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.88,
-      "current_ranking": 47,
+      "current_score": 61.95,
+      "current_ranking": 62,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -4901,8 +6735,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.81,
-      "current_ranking": 47,
+      "current_score": 61.75,
+      "current_ranking": 64,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5020,8 +6854,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.45,
-      "current_ranking": 45,
+      "current_score": 62.19,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5258,8 +7092,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.13,
-      "current_ranking": 47,
+      "current_score": 61.71,
+      "current_ranking": 66,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5377,8 +7211,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.25,
-      "current_ranking": 47,
+      "current_score": 62.26,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5496,8 +7330,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.26,
-      "current_ranking": 47,
+      "current_score": 62.11,
+      "current_ranking": 62,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5615,8 +7449,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.19,
-      "current_ranking": 47,
+      "current_score": 62.09,
+      "current_ranking": 62,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5734,8 +7568,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.18,
-      "current_ranking": 47,
+      "current_score": 61.98,
+      "current_ranking": 62,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5853,8 +7687,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.42,
-      "current_ranking": 45,
+      "current_score": 62.22,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -5972,8 +7806,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.79,
-      "current_ranking": 47,
+      "current_score": 61.26,
+      "current_ranking": 68,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6091,8 +7925,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.4,
-      "current_ranking": 45,
+      "current_score": 61.9,
+      "current_ranking": 63,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6210,8 +8044,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.04,
-      "current_ranking": 47,
+      "current_score": 61.88,
+      "current_ranking": 63,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6330,8 +8164,8 @@
         }
       ],
       "submitter": "ruinward",
-      "current_score": 48.47,
-      "current_ranking": 45
+      "current_score": 62.39,
+      "current_ranking": 61
     },
     {
       "id": "6aa587c92d3dd2c5ae3494e1",
@@ -6448,8 +8282,8 @@
           "msg": null
         }
       ],
-      "current_score": 48.71,
-      "current_ranking": 38,
+      "current_score": 62.4,
+      "current_ranking": 61,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6567,8 +8401,8 @@
           "msg": null
         }
       ],
-      "current_score": 19.34,
-      "current_ranking": 184,
+      "current_score": 25.66,
+      "current_ranking": 225,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6686,8 +8520,8 @@
           "msg": null
         }
       ],
-      "current_score": 11.67,
-      "current_ranking": 188,
+      "current_score": 12.73,
+      "current_ranking": 242,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6805,8 +8639,8 @@
           "msg": null
         }
       ],
-      "current_score": 16.5,
-      "current_ranking": 187,
+      "current_score": 22.36,
+      "current_ranking": 234,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -6924,8 +8758,8 @@
           "msg": null
         }
       ],
-      "current_score": 12.53,
-      "current_ranking": 188,
+      "current_score": 14.88,
+      "current_ranking": 241,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -7043,8 +8877,8 @@
           "msg": null
         }
       ],
-      "current_score": 12.27,
-      "current_ranking": 188,
+      "current_score": 17.16,
+      "current_ranking": 240,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -7162,9 +8996,128 @@
           "msg": null
         }
       ],
-      "current_score": 49.56,
-      "current_ranking": 35,
+      "current_score": 63.63,
+      "current_ranking": 50,
       "submitter": "孙新尧爱提交"
+    },
+    {
+      "id": "6aa59f242d3dd2c5ae3a968d",
+      "create_time": "2026-09-12T18:51:16.762Z",
+      "label": "09-13 02:51",
+      "status": "Pass",
+      "score": 49.7,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 3.62,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.93,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.83,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.03,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.11,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 13.03,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.47,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 35.86,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.4,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 54.35,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 162.37,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 83.07,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 565.58,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4052.75,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9357.05,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 63.46,
+      "current_ranking": 51
     },
     {
       "id": "6aa5a5002d3dd2c5ae3b9b77",
@@ -7281,9 +9234,128 @@
           "msg": null
         }
       ],
-      "current_score": 49.67,
-      "current_ranking": 34,
+      "current_score": 63.95,
+      "current_ranking": 47,
       "submitter": "孙新尧爱提交"
+    },
+    {
+      "id": "6aa5a6292d3dd2c5ae3bc44b",
+      "create_time": "2026-09-12T19:21:13.565Z",
+      "label": "09-13 03:21",
+      "status": "Pass",
+      "score": 49.13,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 3.33,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.94,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.17,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.44,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.34,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 13.41,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.33,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 35.74,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 71.26,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 54.3,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 163.92,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 82.65,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 567.24,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4050.47,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9347.46,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 62.81,
+      "current_ranking": 58
     },
     {
       "id": "6aa5b9432d3dd2c5ae3ed71d",
@@ -7400,8 +9472,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.93,
-      "current_ranking": 24,
+      "current_score": 67.96,
+      "current_ranking": 31,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -7519,9 +9591,128 @@
           "msg": null
         }
       ],
-      "current_score": 52.15,
-      "current_ranking": 26,
+      "current_score": 66.78,
+      "current_ranking": 35,
       "submitter": "孙新尧爱提交"
+    },
+    {
+      "id": "6aa5bbe62d3dd2c5ae3f31b0",
+      "create_time": "2026-09-12T20:53:58.805Z",
+      "label": "09-13 04:53",
+      "status": "Pass",
+      "score": 52.07,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.64,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.97,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.94,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.8,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.35,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.51,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.23,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.88,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.91,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.59,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 161.27,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.21,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 565.11,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4055.76,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9356.94,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 67.07,
+      "current_ranking": 33
     },
     {
       "id": "6aa62d252d3dd2c5ae57c2c8",
@@ -7639,8 +9830,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.71,
-      "current_ranking": 24
+      "current_score": 67.65,
+      "current_ranking": 32
     },
     {
       "id": "6aa633f82d3dd2c5ae59ee8b",
@@ -7758,8 +9949,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.38,
-      "current_ranking": 25
+      "current_score": 66.87,
+      "current_ranking": 35
     },
     {
       "id": "6aa635a52d3dd2c5ae5a77fc",
@@ -7877,8 +10068,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.69,
-      "current_ranking": 24
+      "current_score": 67.61,
+      "current_ranking": 32
     },
     {
       "id": "6aa636ee2d3dd2c5ae5aed78",
@@ -7996,8 +10187,8 @@
           "msg": null
         }
       ],
-      "current_score": 53.41,
-      "current_ranking": 22
+      "current_score": 68.28,
+      "current_ranking": 31
     },
     {
       "id": "6aa638b12d3dd2c5ae5b8af5",
@@ -8115,8 +10306,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.18,
-      "current_ranking": 26
+      "current_score": 65.97,
+      "current_ranking": 37
     },
     {
       "id": "6aa6396f2d3dd2c5ae5bd41f",
@@ -8234,8 +10425,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.06,
-      "current_ranking": 26
+      "current_score": 66.98,
+      "current_ranking": 33
     },
     {
       "id": "6aa63a732d3dd2c5ae5c3b8e",
@@ -8353,8 +10544,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.5,
-      "current_ranking": 24
+      "current_score": 67.24,
+      "current_ranking": 33
     },
     {
       "id": "6aa63db22d3dd2c5ae5d7480",
@@ -8472,8 +10663,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.02,
-      "current_ranking": 26
+      "current_score": 67.16,
+      "current_ranking": 33
     },
     {
       "id": "6aa63f3c2d3dd2c5ae5e0e7d",
@@ -8591,8 +10782,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.08,
-      "current_ranking": 26
+      "current_score": 66.95,
+      "current_ranking": 34
     },
     {
       "id": "6aa6414d2d3dd2c5ae5ecaa5",
@@ -8829,8 +11020,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.63,
-      "current_ranking": 24
+      "current_score": 67.54,
+      "current_ranking": 32
     },
     {
       "id": "6aa6437f2d3dd2c5ae5fa274",
@@ -8948,8 +11139,8 @@
           "msg": null
         }
       ],
-      "current_score": 47.32,
-      "current_ranking": 49
+      "current_score": 59.54,
+      "current_ranking": 80
     },
     {
       "id": "6aa6447d2d3dd2c5ae5ffe95",
@@ -9067,8 +11258,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.86,
-      "current_ranking": 24
+      "current_score": 67.72,
+      "current_ranking": 32
     },
     {
       "id": "6aa64a662d3dd2c5ae62a0f8",
@@ -9305,8 +11496,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.46,
-      "current_ranking": 24
+      "current_score": 67.3,
+      "current_ranking": 33
     },
     {
       "id": "6aa64c2c2d3dd2c5ae638506",
@@ -9424,8 +11615,8 @@
           "msg": null
         }
       ],
-      "current_score": 53.02,
-      "current_ranking": 24
+      "current_score": 68.01,
+      "current_ranking": 31
     },
     {
       "id": "6aa64cb22d3dd2c5ae63c561",
@@ -9662,8 +11853,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.39,
-      "current_ranking": 25
+      "current_score": 67.11,
+      "current_ranking": 33
     },
     {
       "id": "6aa64e9c2d3dd2c5ae64e441",
@@ -9781,8 +11972,1079 @@
           "msg": null
         }
       ],
-      "current_score": 53.34,
-      "current_ranking": 22
+      "current_score": 68.42,
+      "current_ranking": 31
+    },
+    {
+      "id": "6aa666562d3dd2c5ae6ebb7d",
+      "create_time": "2026-09-13T09:01:10.326Z",
+      "label": "09-13 17:01",
+      "status": "Pass",
+      "score": 53.04,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.62,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.84,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.91,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.54,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.24,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.23,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 16.87,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.5,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.09,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.32,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 162.24,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 82.35,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 564.65,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4044.04,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9330.96,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 67.63,
+      "current_ranking": 32
+    },
+    {
+      "id": "6aa667312d3dd2c5ae6f1168",
+      "create_time": "2026-09-13T09:04:49.257Z",
+      "label": "09-13 17:04",
+      "status": "Time Limit Exceeded",
+      "score": 0,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 0,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 67.54,
+          "status": "Time Limit Exceeded",
+          "precision": 0,
+          "msg": ""
+        },
+        {
+          "time": 0,
+          "best_time": 48.62,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 308,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 157.08,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        },
+        {
+          "time": 0,
+          "best_time": 8506.03,
+          "status": "Skipped",
+          "precision": 0,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 0,
+      "current_ranking": null
+    },
+    {
+      "id": "6aa668ee2d3dd2c5ae6fb8c9",
+      "create_time": "2026-09-13T09:12:14.987Z",
+      "label": "09-13 17:12",
+      "status": "Pass",
+      "score": 53.06,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.9,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.74,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.83,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.64,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.19,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.23,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 16.83,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.6,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.59,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.9,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 160.59,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.3,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 564.15,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4044.48,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9361.02,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 68.02,
+      "current_ranking": 31
+    },
+    {
+      "id": "6aa670a82d3dd2c5ae729c29",
+      "create_time": "2026-09-13T09:45:12.216Z",
+      "label": "09-13 17:45",
+      "status": "Pass",
+      "score": 53.37,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.49,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.81,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.94,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.06,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.28,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.21,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 16.66,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.8,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 69.86,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.74,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 162.3,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 79.83,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 561.14,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4050.62,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9346.3,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 68.17,
+      "current_ranking": 31
+    },
+    {
+      "id": "6aa67d4d2d3dd2c5ae769c6d",
+      "create_time": "2026-09-13T10:39:09.743Z",
+      "label": "09-13 18:39",
+      "status": "Pass",
+      "score": 52.58,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.84,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.75,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.87,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.6,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.2,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.39,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.11,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.11,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.49,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 50.37,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 159.34,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 79.93,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 562.55,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4048.61,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9330.17,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 67.63,
+      "current_ranking": 32
+    },
+    {
+      "id": "6aa67e8d2d3dd2c5ae76ff7c",
+      "create_time": "2026-09-13T10:44:29.446Z",
+      "label": "09-13 18:44",
+      "status": "Pass",
+      "score": 7.69,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 381.23,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2653.11,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15149.13,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15153.83,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3038.34,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15157.41,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15162.06,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15179.56,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15215.24,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15194.63,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15309.22,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15230.02,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 15707.71,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 19197.45,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 24492.66,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 8.7,
+      "current_ranking": 243
+    },
+    {
+      "id": "6aa67fcd2d3dd2c5ae7762f4",
+      "create_time": "2026-09-13T10:49:49.797Z",
+      "label": "09-13 18:49",
+      "status": "Pass",
+      "score": 52.22,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.64,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.88,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.08,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.78,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.14,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.34,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.32,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.49,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.96,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.57,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 156.81,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 82.02,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 561.83,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4064.14,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9382.56,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 67.02,
+      "current_ranking": 33
+    },
+    {
+      "id": "6aa6825e2d3dd2c5ae7823f9",
+      "create_time": "2026-09-13T11:00:46.849Z",
+      "label": "09-13 19:00",
+      "status": "Pass",
+      "score": 52.74,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.53,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.82,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.82,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.66,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.24,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.38,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.16,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.58,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.36,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 50.34,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 161.39,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.01,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 565.82,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4054.41,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9339.53,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 67.93,
+      "current_ranking": 31
+    },
+    {
+      "id": "6aa683602d3dd2c5ae788165",
+      "create_time": "2026-09-13T11:05:04.849Z",
+      "label": "09-13 19:05",
+      "status": "Pass",
+      "score": 52.75,
+      "ranking": null,
+      "team_score": null,
+      "cases": [
+        {
+          "time": 2.67,
+          "best_time": 1.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.8,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3.94,
+          "best_time": 2.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.65,
+          "best_time": 3.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.25,
+          "best_time": 5.32,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.27,
+          "best_time": 11.89,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.24,
+          "best_time": 15.99,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.56,
+          "best_time": 17.57,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 69.56,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.96,
+          "best_time": 47.34,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 159.42,
+          "best_time": 67.54,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 79.86,
+          "best_time": 48.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 561.74,
+          "best_time": 308,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4049.33,
+          "best_time": 157.08,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9363.61,
+          "best_time": 8506.03,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "submitter": "琉暝",
+      "current_score": 68.02,
+      "current_ranking": 31
     },
     {
       "id": "6aa6a10d2d3dd2c5ae8255b2",
@@ -9900,8 +13162,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.89,
-      "current_ranking": 24
+      "current_score": 67.71,
+      "current_ranking": 32
     },
     {
       "id": "6aa6a27b2d3dd2c5ae82e414",
@@ -10019,8 +13281,8 @@
           "msg": null
         }
       ],
-      "current_score": 53.61,
-      "current_ranking": 17
+      "current_score": 68.5,
+      "current_ranking": 30
     },
     {
       "id": "6aa6b79a2d3dd2c5ae8961fb",
@@ -10138,8 +13400,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.9,
-      "current_ranking": 24
+      "current_score": 67.73,
+      "current_ranking": 31
     },
     {
       "id": "6aa771b72d3dd2c5aeb4563e",
@@ -10257,8 +13519,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.71,
-      "current_ranking": 24
+      "current_score": 67.67,
+      "current_ranking": 32
     },
     {
       "id": "6aa772ee2d3dd2c5aeb4acf2",
@@ -10376,8 +13638,8 @@
           "msg": null
         }
       ],
-      "current_score": 52.31,
-      "current_ranking": 26
+      "current_score": 67.32,
+      "current_ranking": 33
     },
     {
       "id": "6aa776782d3dd2c5aeb79c73",
@@ -10495,8 +13757,8 @@
           "msg": null
         }
       ],
-      "current_score": 53.24,
-      "current_ranking": 23
+      "current_score": 68.35,
+      "current_ranking": 31
     },
     {
       "id": "6aa77b182d3dd2c5aeb9c261",
@@ -10614,8 +13876,8 @@
           "msg": null
         }
       ],
-      "current_score": 54.64,
-      "current_ranking": 11
+      "current_score": 72.59,
+      "current_ranking": 14
     },
     {
       "id": "6aa77c0c2d3dd2c5aeba2b23",
@@ -10733,8 +13995,8 @@
           "msg": null
         }
       ],
-      "current_score": 49.05,
-      "current_ranking": 37
+      "current_score": 67.16,
+      "current_ranking": 33
     },
     {
       "id": "6aa77d1b2d3dd2c5aebaa24e",
@@ -10852,8 +14114,8 @@
           "msg": null
         }
       ],
-      "current_score": 54.68,
-      "current_ranking": 11
+      "current_score": 72.84,
+      "current_ranking": 13
     },
     {
       "id": "6aa77e262d3dd2c5aebb1d7f",
@@ -10971,8 +14233,8 @@
           "msg": null
         }
       ],
-      "current_score": 54.02,
-      "current_ranking": 16
+      "current_score": 70.94,
+      "current_ranking": 19
     },
     {
       "id": "6aa77f342d3dd2c5aebb8ada",
@@ -11090,8 +14352,8 @@
           "msg": null
         }
       ],
-      "current_score": 55.05,
-      "current_ranking": 10
+      "current_score": 73.66,
+      "current_ranking": 13
     },
     {
       "id": "6aa799ea2d3dd2c5aec6afbe",
@@ -11209,8 +14471,127 @@
           "msg": null
         }
       ],
-      "current_score": 54.9,
-      "current_ranking": 10
+      "current_score": 73.28,
+      "current_ranking": 13
+    },
+    {
+      "id": "6aacfad6b0477ec41e41e997",
+      "create_time": "2026-09-18T08:49:47.846029Z",
+      "label": "09-18 16:49",
+      "status": "Pass",
+      "submitter": "ruinward",
+      "score": 71.94,
+      "ranking": 14,
+      "team_score": 71.94,
+      "cases": [
+        {
+          "time": 2.6,
+          "best_time": 1.71,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.71,
+          "best_time": 2.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 4.34,
+          "best_time": 2.48,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.47,
+          "best_time": 6.66,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.32,
+          "best_time": 5.21,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.88,
+          "best_time": 11.45,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.23,
+          "best_time": 14.05,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.9,
+          "best_time": 30.64,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.94,
+          "best_time": 50.61,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.34,
+          "best_time": 47.35,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 136.41,
+          "best_time": 132.05,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.81,
+          "best_time": 76.55,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 425.81,
+          "best_time": 408.18,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3835.07,
+          "best_time": 3750.12,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8954.12,
+          "best_time": 8499.88,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "current_score": 71.94,
+      "current_ranking": 14
     }
   ],
   "leaderboard": [
@@ -12764,10 +16145,10 @@
     }
   ],
   "quota": {
-    "date": "2026-09-14",
+    "date": "2026-09-18",
     "total": 50,
     "used": 1,
-    "account_id": "member2"
+    "account_id": "member1"
   },
   "team": {
     "team_name": "thelikeing 的队伍",
@@ -12775,213 +16156,299 @@
     "team_id": "2095765058952355842"
   },
   "team_rank": 10,
-  "team_score": 55.16,
+  "team_score": 54.9,
   "global_best_times": [
-    1.47,
+    1.71,
     2.16,
-    2.54,
-    3.23,
-    5.32,
-    11.89,
-    15.99,
-    17.57,
+    2.48,
+    6.66,
+    5.21,
+    11.45,
+    14.05,
+    30.64,
     50.61,
-    47.34,
-    67.54,
-    48.62,
-    308,
-    157.08,
-    8506.03
+    47.35,
+    132.05,
+    76.55,
+    408.18,
+    3750.12,
+    8499.88
   ],
   "leaderboard_scores": [
-    60.44,
-    59.84,
-    59.3,
+    83.06,
+    81.52,
+    80.42,
+    79.41,
+    78.67,
+    78.52,
+    77.64,
+    77.14,
+    77.06,
+    76.44,
+    76.43,
+    73.99,
+    72.79,
+    71.94,
+    71.83,
+    71.21,
+    70.99,
+    70.98,
+    70.94,
+    70.79,
+    70.78,
+    70.21,
+    70.08,
+    69.98,
+    69.04,
+    68.93,
+    68.83,
+    68.63,
+    68.63,
+    68.49,
+    67.73,
+    67.44,
+    66.98,
+    66.9,
+    66.39,
+    66.13,
+    65.83,
+    65.77,
+    65.57,
+    65.43,
+    64.97,
+    64.94,
+    64.89,
+    64.39,
+    64.08,
+    64,
+    63.9,
+    63.75,
+    63.65,
+    63.5,
+    63.35,
+    63.21,
+    63.2,
+    63.14,
+    63.14,
+    63.11,
+    62.82,
+    62.54,
+    62.54,
+    62.52,
+    62.18,
+    61.95,
+    61.82,
+    61.74,
+    61.74,
+    61.7,
+    61.37,
+    61.17,
+    60.83,
+    60.67,
+    60.63,
+    60.54,
+    60.28,
+    60.27,
+    60.26,
+    60.23,
+    59.66,
+    59.66,
+    59.63,
+    59.52,
+    59.36,
+    59.26,
     59.11,
+    59,
+    58.92,
+    58.81,
+    58.8,
+    58.7,
+    58.25,
+    57.93,
+    57.83,
+    57.65,
     56.84,
-    56.29,
-    55.49,
-    55.32,
-    55.26,
-    54.9,
-    54.48,
-    54.31,
-    54.25,
-    54.2,
-    54.14,
-    53.64,
-    53.56,
+    56.56,
+    56.4,
+    56.37,
+    56.26,
+    56.25,
+    56.19,
+    56.16,
+    55.77,
+    55.39,
+    55.06,
+    54.92,
+    54.81,
+    54.73,
+    54.39,
+    54.32,
+    54.29,
+    54.28,
+    53.83,
+    53.79,
+    53.77,
+    53.55,
     53.51,
-    53.5,
-    53.47,
-    53.43,
-    53.27,
-    53.07,
+    52.97,
+    52.95,
+    52.53,
     52.41,
-    52.33,
-    51.79,
-    51.78,
-    50.99,
-    50.91,
-    50.64,
-    50.49,
-    49.85,
-    49.68,
-    49.66,
-    49.46,
-    49.44,
-    48.87,
-    48.68,
-    48.62,
-    48.6,
-    48.58,
-    48.58,
-    48.56,
-    48.52,
-    48.38,
-    48.33,
-    47.51,
-    47.4,
-    47.02,
-    46.67,
-    46.3,
-    45.78,
-    45.77,
-    45.59,
-    45.04,
-    44.84,
-    44.64,
-    44.58,
-    44.44,
-    44.42,
-    44.35,
-    44.18,
-    44.16,
-    44.13,
-    44.13,
-    43.95,
-    43.84,
-    43.65,
-    43.61,
-    43.57,
-    43.45,
-    43.44,
-    43.37,
-    43.33,
+    52.32,
+    52.18,
+    52.09,
+    51.97,
+    51.97,
+    51.61,
+    51.42,
+    51.3,
+    51.16,
+    50.83,
+    50.78,
+    50.56,
+    50.2,
+    50.14,
+    50.04,
+    49.84,
+    49.79,
+    49.61,
+    49.53,
+    49.43,
+    49.39,
+    49.26,
+    49.01,
+    48.94,
+    48.81,
+    48.81,
+    48.65,
+    48.61,
+    48.46,
+    48.27,
+    48.24,
+    48.19,
+    47.99,
+    47.96,
+    47.89,
+    47.49,
+    46.99,
+    46.97,
+    46.77,
+    46.41,
+    46.36,
+    45.65,
+    44.93,
+    44.79,
+    44.72,
+    44.63,
+    44.61,
+    43.66,
+    43.22,
+    43.2,
     43.14,
-    43.07,
-    42.93,
-    42.79,
-    42.58,
-    42,
-    41.88,
-    41.87,
-    41.85,
-    41.43,
-    41.24,
-    41.01,
-    40.85,
-    40.69,
-    40.64,
-    40.28,
-    40.25,
-    40.02,
-    39.62,
-    39.47,
-    39.42,
-    39.34,
-    39.33,
-    39.27,
-    38.95,
-    38.56,
-    38.13,
-    37.8,
-    37.59,
-    37.57,
-    37.24,
-    36.86,
-    36.85,
-    36.83,
-    36.79,
-    36.77,
-    36.74,
-    36.65,
+    43.02,
+    42.96,
+    42.92,
+    42.86,
+    42.6,
+    42.55,
+    42.44,
+    42.31,
+    42.22,
+    41.84,
+    41.38,
+    41.34,
+    41.06,
+    40.77,
+    40.38,
+    40.16,
+    40.08,
+    40.05,
+    40.03,
+    39.54,
+    39.53,
+    38.62,
+    38.28,
+    38.18,
+    37.69,
+    37.64,
+    37.11,
+    36.82,
     36.63,
-    36.61,
-    36.51,
-    36.24,
-    35.76,
-    35.54,
-    35.52,
-    34.97,
-    34.96,
-    34.94,
-    34.92,
-    34.85,
-    34.83,
-    34.74,
-    34.58,
-    34.51,
-    34.41,
-    34.29,
-    34.06,
-    34.04,
-    33.64,
-    33.5,
-    33.36,
-    33.26,
-    33.05,
-    32.98,
-    32.59,
-    32.22,
-    31.96,
-    31.95,
-    31.77,
-    31.66,
-    31.58,
-    31.52,
-    31.16,
-    30.65,
-    29.93,
-    29.67,
-    29.38,
-    29.16,
-    29.03,
-    28.9,
-    28.82,
-    28,
-    27.73,
-    27.62,
-    27.55,
-    27.39,
-    27.36,
-    27.27,
-    27.18,
-    26.94,
-    26.83,
-    26.71,
-    26.65,
-    26.61,
-    25.02,
-    25,
-    24.5,
-    23.96,
-    23.41,
-    22.8,
-    22.79,
-    22.48,
-    22.41,
-    22.3,
-    22.13,
-    21.61,
-    21.06,
-    21.05,
-    20.49,
-    18.97,
-    18.71,
-    17.85,
-    14.28,
-    8.47,
+    35.83,
+    35.36,
+    35.32,
+    35.21,
+    34.87,
+    34.23,
+    34.18,
+    33.54,
+    33.47,
+    33.41,
+    33.04,
+    33.01,
+    31.98,
+    31.08,
+    31.06,
+    30.97,
+    30.89,
+    30.44,
+    28.87,
+    28.81,
+    28.7,
+    28.18,
+    27.79,
+    27.57,
+    25.76,
+    24.75,
+    24.4,
+    24.31,
+    24.12,
+    23.78,
+    23.27,
+    22.43,
+    22.43,
+    22.38,
+    20.67,
+    20.38,
+    19.92,
+    19.52,
+    19.22,
+    18.13,
+    15.18,
+    13.1,
+    12.2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
