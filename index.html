@@ -233,7 +233,9 @@ function computeStats(subs) {
   // subs 已按 create_time 降序（最新在前），取第一个为最新提交
   const last = subs[0];
   for (const s of subs) {
-    if (s.score > bestScore) bestScore = s.score;
+    // 历史最优用实时成绩（current_score 会随全局最优变动重算），兼容旧记录回退到 score
+    const sc = s.status === 'Pass' ? (s.current_score ?? s.score ?? 0) : 0;
+    if (sc > bestScore) bestScore = sc;
     if (s.status === 'Pass') passCount++;
   }
   return {
@@ -484,6 +486,28 @@ function caseColor(ratio) {
   return `rgba(${r},${g},${b},${a.toFixed(2)})`;
 }
 
+// 我们理论最优：每个 case 取我方所有 Pass 提交的最小时间，按评分公式与全局最优合成
+function computeOurBest(subs) {
+  const gbest = rawData.global_best_times || [];
+  const ourBest = new Array(15).fill(null);
+  for (const s of subs) {
+    if (s.status !== 'Pass') continue;
+    (s.cases || []).forEach((c, i) => {
+      if (c.time > 0 && (ourBest[i] == null || c.time < ourBest[i])) ourBest[i] = c.time;
+    });
+  }
+  // 评分：case_score = 100 / (1 + log_1.5(t/b))，15 个 case 取平均
+  let total = 0, cnt = 0;
+  for (let i = 0; i < 15; i++) {
+    const t = ourBest[i], b = gbest[i];
+    if (t != null && t > 0 && b > 0) {
+      total += 100.0 / (1.0 + Math.log(t / b) / Math.log(1.5));
+      cnt++;
+    }
+  }
+  return { times: ourBest, score: cnt ? total / cnt : 0 };
+}
+
 function renderTable(subs) {
   const onlyPass = document.getElementById('onlyPass').checked;
   const tbody = document.querySelector('#detail-table tbody');
@@ -513,6 +537,38 @@ function renderTable(subs) {
     gtd.innerHTML = gcells;
     gtr.appendChild(gtd);
     tbody.appendChild(gtr);
+  }
+
+  // 我们理论最优行：每个 case 取我方所有 Pass 提交的最小时间组成的理论成绩
+  const ours = computeOurBest(subs);
+  if (ours.times.some(t => t != null)) {
+    const otr = document.createElement('tr');
+    otr.className = 'best-row';
+    otr.innerHTML = `
+      <td>我们理论最优</td>
+      <td style="color:var(--muted)">—</td>
+      <td><span class="badge pass">best</span></td>
+      <td style="color:var(--muted)">—</td>
+      <td>—</td>
+      <td>${fmt(ours.score)}</td>
+      <td style="color:var(--muted)">—</td>
+      <td style="color:var(--muted)">—</td>`;
+    const otd = document.createElement('td');
+    otd.colSpan = 15;
+    let ocells = '<div class="case-grid">';
+    for (let i = 0; i < 15; i++) {
+      const t = ours.times[i];
+      const b = gbest[i];
+      const ratio = (t != null && b > 0) ? (t / b) : null;
+      const bg = ratio != null ? caseColor(ratio) : '';
+      ocells += `<div class="case-cell" style="${bg?'background:'+bg+';':''}"
+        title="Case ${i+1}: 我方最优 ${fmt(t,3)} / 全局最优 ${fmt(b,3)} μs (ratio ${ratio!=null?ratio.toFixed(2):'-'})">
+        <div class="t">${t != null ? fmt(t,1) : '-'}</div><div class="b">${b > 0 ? fmt(b,1) : '-'}</div></div>`;
+    }
+    ocells += '</div>';
+    otd.innerHTML = ocells;
+    otr.appendChild(otd);
+    tbody.appendChild(otr);
   }
 
   const rows = onlyPass ? subs.filter(s => s.status === 'Pass') : subs;

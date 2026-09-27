@@ -14,6 +14,8 @@ SUBMISSION_FIELDS_TO_DROP = {
     'source',           # kernel.asc source code
     'account_id',       # team member account ID
     'user_id',          # team member user ID
+    'report_path',      # local performance-analysis report path (sensitive)
+    'ai_analysis',      # AI review text (sensitive)
 }
 
 # Top-level fields to drop from data.json
