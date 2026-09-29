@@ -5,8 +5,9 @@ import subprocess
 import sys
 from pathlib import Path
 
-SOURCE_DATA = Path('/mnt/workspace/scoreboard/data.json')
-REPO_DIR = Path('/mnt/workspace/scoreboard-view')
+_HERE = Path(__file__).resolve().parent
+SOURCE_DATA = _HERE.parent / 'scoreboard' / 'data.json'
+REPO_DIR = _HERE
 TARGET_DATA = REPO_DIR / 'data.json'
 
 # Fields to remove from each submission
