@@ -170,6 +170,13 @@
   <h2>提交明细</h2>
   <div class="controls">
     <label><input type="checkbox" id="onlyPass" checked> 仅显示 Pass</label>
+    <span style="display:inline-flex;align-items:center;gap:8px;margin-left:12px">
+      <span style="color:var(--muted);font-size:11px">1.0×</span>
+      <span style="display:inline-block;width:180px;height:12px;border-radius:6px;border:1px solid var(--border);
+        background:linear-gradient(90deg, rgba(63,185,80,0.75), rgba(210,153,34,0.65), rgba(219,109,40,0.65), rgba(248,81,73,0.65), rgba(218,54,48,0.75), rgba(137,87,229,0.75))"></span>
+      <span style="color:var(--muted);font-size:11px">2.4×+</span>
+      <span style="color:var(--muted);font-size:11px;margin-left:6px">（时间 / 实时最优，平滑分色）</span>
+    </span>
   </div>
   <div id="table-wrap" style="overflow:auto; max-height:45vh; border:1px solid var(--border); border-radius:8px;">
     <table id="detail-table">
@@ -475,15 +482,33 @@ function renderChart(subs) {
   }
 }
 
-function caseColor(ratio) {
-  // ratio 越接近 1 越绿，越大越红（绿 #3fb950 → 红 #f85149）
-  if (!isFinite(ratio) || ratio <= 0) return 'rgba(255,255,255,0.06)';
-  const t = Math.min((ratio - 1) / 1.5, 1); // ratio=1 → 0，ratio>=2.5 → 1
-  const r = Math.round(63 + (248 - 63) * t);
-  const g = Math.round(185 + (81 - 185) * t);
-  const b = Math.round(80 + (73 - 80) * t);
-  const a = 0.5 + 0.35 * (1 - t); // 越绿越亮
-  return `rgba(${r},${g},${b},${a.toFixed(2)})`;
+const CASE_ANCHORS = [
+  // t/b 锚点：贴最优绿 → 黄 → 橙 → 红橙 → 深红 → 紫（远超最优）
+  [1.03, 63, 185, 80],
+  [1.20, 210, 153, 34],
+  [1.35, 219, 109, 40],
+  [1.60, 248, 81, 73],
+  [2.00, 218, 54, 48],
+  [2.40, 137, 87, 229],
+];
+
+function caseTier(ratio) {
+  // 沿锚点做分段线性插值：相邻档位颜色平滑过渡
+  if (!isFinite(ratio) || ratio <= 0) return { bg: 'rgba(255,255,255,0.06)', fg: 'var(--text)' };
+  const x = Math.min(ratio, CASE_ANCHORS[CASE_ANCHORS.length-1][0]);
+  let c0 = CASE_ANCHORS[0], c1 = CASE_ANCHORS[0], t = 0;
+  if (x > CASE_ANCHORS[0][0]) {
+    for (let i = 0; i < CASE_ANCHORS.length - 1; i++) {
+      const a = CASE_ANCHORS[i], b = CASE_ANCHORS[i+1];
+      if (x <= b[0]) { c0 = a; c1 = b; t = (x - a[0]) / (b[0] - a[0]); break; }
+    }
+    if (x > CASE_ANCHORS[CASE_ANCHORS.length-1][0]) { c0 = c1 = CASE_ANCHORS[CASE_ANCHORS.length-1]; }
+  }
+  const r = Math.round(c0[1] + (c1[1]-c0[1])*t);
+  const g = Math.round(c0[2] + (c1[2]-c0[2])*t);
+  const b = Math.round(c0[3] + (c1[3]-c0[3])*t);
+  const alpha = 0.42 + 0.22 * Math.min(Math.max((x - 1) / 0.6, 0), 1);
+  return { bg: `rgba(${r},${g},${b},${alpha.toFixed(2)})`, fg: '#ffffff' };
 }
 
 // 我们理论最优：每个 case 取我方所有 Pass 提交的最小时间，按评分公式与全局最优合成
@@ -531,7 +556,7 @@ function renderTable(subs) {
     gtd.colSpan = 15;
     let gcells = '<div class="case-grid">';
     for (let i = 0; i < 15; i++) {
-      gcells += `<div class="case-cell"><div class="t">${fmt(gbest[i],1)}</div><div class="b">μs</div></div>`;
+      gcells += `<div class="case-cell"><div class="t">${fmt(gbest[i],2)}</div><div class="b">μs</div></div>`;
     }
     gcells += '</div>';
     gtd.innerHTML = gcells;
@@ -560,10 +585,11 @@ function renderTable(subs) {
       const t = ours.times[i];
       const b = gbest[i];
       const ratio = (t != null && b > 0) ? (t / b) : null;
-      const bg = ratio != null ? caseColor(ratio) : '';
-      ocells += `<div class="case-cell" style="${bg?'background:'+bg+';':''}"
+      const tier = ratio != null ? caseTier(ratio) : null;
+      const style = tier ? `background:${tier.bg};color:${tier.fg}` : '';
+      ocells += `<div class="case-cell" style="${style}"
         title="Case ${i+1}: 我方最优 ${fmt(t,3)} / 全局最优 ${fmt(b,3)} μs (ratio ${ratio!=null?ratio.toFixed(2):'-'})">
-        <div class="t">${t != null ? fmt(t,1) : '-'}</div><div class="b">${b > 0 ? fmt(b,1) : '-'}</div></div>`;
+        <div class="t">${t != null ? fmt(t,2) : '-'}</div><div class="b">${b > 0 ? fmt(b,2) : '-'}</div></div>`;
     }
     ocells += '</div>';
     otd.innerHTML = ocells;
@@ -596,10 +622,12 @@ function renderTable(subs) {
         // 实时最优来自 global_best_times（平台实时获取），而非提交时爬取的 best_time
         const bt = (gbest.length > i && gbest[i] > 0) ? gbest[i] : (c.best_time || 0);
         const ratio = (bt > 0 && c.time > 0) ? (c.time / bt) : null;
-        const bg = ratio != null ? caseColor(ratio) : '';
-        cells += `<div class="case-cell" style="${bg?'background:'+bg+';':''}${c.status!=='Pass'?'color:var(--red)':''}"
+        const tier = ratio != null ? caseTier(ratio) : null;
+        const fg = c.status !== 'Pass' ? 'var(--red)' : (tier ? tier.fg : 'var(--text)');
+        const style = (tier ? `background:${tier.bg};` : '') + `color:${fg};` + (c.status!=='Pass'?'font-weight:600;':'');
+        cells += `<div class="case-cell" style="${style}"
           title="Case ${i+1}: ${fmt(c.time,3)} / 实时最优 ${fmt(bt,3)} μs (ratio ${ratio!=null?ratio.toFixed(2):'-'})">
-          <div class="t">${fmt(c.time,1)}</div><div class="b">${fmt(bt,1)}</div></div>`;
+          <div class="t">${fmt(c.time,2)}</div><div class="b">${fmt(bt,2)}</div></div>`;
       });
       cells += '</div>';
       td.innerHTML = cells;
