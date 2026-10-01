@@ -18399,7 +18399,7 @@
         }
       ],
       "current_score": 74.98,
-      "current_ranking": 30
+      "current_ranking": 31
     },
     {
       "id": "6ab3c1b20304f72a56189302",
@@ -18518,7 +18518,7 @@
         }
       ],
       "current_score": 76.54,
-      "current_ranking": 24
+      "current_ranking": 23
     },
     {
       "id": "6ab3c3410304f72a56198b6f",
@@ -18637,7 +18637,7 @@
         }
       ],
       "current_score": 74.94,
-      "current_ranking": 31
+      "current_ranking": 32
     },
     {
       "id": "6ab3c65f0304f72a561b5d4d",
@@ -18756,7 +18756,7 @@
         }
       ],
       "current_score": 76.55,
-      "current_ranking": 24
+      "current_ranking": 23
     },
     {
       "id": "6ab4fd58694b590c3c16b093",
@@ -18994,7 +18994,7 @@
         }
       ],
       "current_score": 76.46,
-      "current_ranking": 25
+      "current_ranking": 24
     },
     {
       "id": "6ab511fa694b590c3c218c17",
@@ -19232,7 +19232,7 @@
         }
       ],
       "current_score": 76.92,
-      "current_ranking": 20
+      "current_ranking": 19
     },
     {
       "id": "6ab6166a694b590c3c8c6bf1",
@@ -19589,7 +19589,7 @@
         }
       ],
       "current_score": 76.16,
-      "current_ranking": 27
+      "current_ranking": 26
     },
     {
       "id": "6ab61d13694b590c3c8f91e7",
@@ -19827,7 +19827,7 @@
         }
       ],
       "current_score": 76.57,
-      "current_ranking": 24
+      "current_ranking": 23
     },
     {
       "id": "6ab626a8694b590c3c945a3e",
@@ -20065,7 +20065,7 @@
         }
       ],
       "current_score": 75.68,
-      "current_ranking": 28
+      "current_ranking": 27
     },
     {
       "id": "6ab636d1694b590c3c9d3a0b",
@@ -20303,7 +20303,7 @@
       ],
       "submitter": "ruinward",
       "current_score": 76.31,
-      "current_ranking": 26
+      "current_ranking": 25
     },
     {
       "id": "6ab8d6d2694b590c3c0697a5",
@@ -21255,7 +21255,7 @@
         }
       ],
       "current_score": 76.77,
-      "current_ranking": 21
+      "current_ranking": 20
     },
     {
       "id": "6abcf00d694b590c3c5481cd",
@@ -22088,7 +22088,7 @@
         }
       ],
       "current_score": 75.93,
-      "current_ranking": 27
+      "current_ranking": 26
     },
     {
       "id": "6abd06ec694b590c3c60f9dc",
@@ -22207,7 +22207,7 @@
         }
       ],
       "current_score": 76.15,
-      "current_ranking": 27
+      "current_ranking": 26
     },
     {
       "id": "6abd07d7694b590c3c61816d",
@@ -22445,7 +22445,7 @@
         }
       ],
       "current_score": 76.07,
-      "current_ranking": 27
+      "current_ranking": 26
     },
     {
       "id": "6abd10d6694b590c3c660970",
@@ -23279,6 +23279,125 @@
       ],
       "current_score": 76.94,
       "current_ranking": 19
+    },
+    {
+      "id": "6abdc400694b590c3caa46b6",
+      "create_time": "2026-10-01T02:24:27.515612Z",
+      "label": "10-01 10:24",
+      "status": "Pass",
+      "submitter": "琉暝",
+      "score": 75.24,
+      "ranking": 29,
+      "team_score": 75.24,
+      "cases": [
+        {
+          "time": 2.23,
+          "best_time": 1.27,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.58,
+          "best_time": 2.04,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.62,
+          "best_time": 2.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 9.21,
+          "best_time": 6.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 5.84,
+          "best_time": 5.2,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 13.07,
+          "best_time": 9.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.18,
+          "best_time": 13.9,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.76,
+          "best_time": 30.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.6,
+          "best_time": 67.79,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.47,
+          "best_time": 46.63,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 136.89,
+          "best_time": 131.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 83.17,
+          "best_time": 75.93,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 423.69,
+          "best_time": 392.72,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3827.57,
+          "best_time": 3665.94,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8944.95,
+          "best_time": 7948.73,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "current_score": 75.24,
+      "current_ranking": 29
     }
   ],
   "leaderboard": [
@@ -24835,7 +24954,7 @@
     "date": "2026-10-01",
     "total": 50,
     "used": 1,
-    "account_id": "member1"
+    "account_id": "member2"
   },
   "team": {
     "team_name": "thelikeing 的队伍",
@@ -24880,7 +24999,6 @@
     77.55,
     77.3,
     77.29,
-    76.94,
     76.78,
     76.75,
     76.72,
@@ -24889,10 +25007,11 @@
     76.42,
     76.24,
     75.87,
+    75.48,
     75.42,
+    75.24,
     75.11,
     74.98,
-    74.8,
     74.73,
     74.39,
     74.25,
@@ -25146,8 +25265,8 @@
     42.06,
     41.93,
     41.47,
-    41.12,
     41.11,
+    40.86,
     40.86,
     40.71,
     40.54,
