@@ -8997,7 +8997,7 @@
         }
       ],
       "current_score": 62.6,
-      "current_ranking": 96,
+      "current_ranking": 97,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -9117,7 +9117,7 @@
       ],
       "submitter": "琉暝",
       "current_score": 62.28,
-      "current_ranking": 100
+      "current_ranking": 101
     },
     {
       "id": "6aa5a5002d3dd2c5ae3b9b77",
@@ -9235,7 +9235,7 @@
         }
       ],
       "current_score": 62.53,
-      "current_ranking": 96,
+      "current_ranking": 97,
       "submitter": "孙新尧爱提交"
     },
     {
@@ -19113,7 +19113,7 @@
         }
       ],
       "current_score": 77.41,
-      "current_ranking": 16
+      "current_ranking": 17
     },
     {
       "id": "6ab61082694b590c3c896b11",
@@ -23873,6 +23873,125 @@
         }
       ],
       "current_score": 77.38,
+      "current_ranking": 17
+    },
+    {
+      "id": "6abdcd34694b590c3cadec09",
+      "create_time": "2026-10-01T03:03:43.447725Z",
+      "label": "10-01 11:03",
+      "status": "Pass",
+      "submitter": "琉暝",
+      "score": 77.43,
+      "ranking": 16,
+      "team_score": 77.43,
+      "cases": [
+        {
+          "time": 2.09,
+          "best_time": 1.27,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.35,
+          "best_time": 2.04,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.64,
+          "best_time": 2.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.37,
+          "best_time": 6.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 5.86,
+          "best_time": 5.2,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.35,
+          "best_time": 9.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 16.97,
+          "best_time": 13.9,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.68,
+          "best_time": 30.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.57,
+          "best_time": 67.79,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.91,
+          "best_time": 46.63,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 136.2,
+          "best_time": 131.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.26,
+          "best_time": 75.93,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 421.96,
+          "best_time": 392.72,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3841.55,
+          "best_time": 3665.94,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8922.74,
+          "best_time": 7948.73,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "current_score": 77.43,
       "current_ranking": 16
     }
   ],
@@ -25429,8 +25548,8 @@
   "quota": {
     "date": "2026-10-01",
     "total": 50,
-    "used": 2,
-    "account_id": "member1"
+    "used": 3,
+    "account_id": "member2"
   },
   "team": {
     "team_name": "thelikeing 的队伍",
@@ -25472,7 +25591,7 @@
     78.08,
     77.79,
     77.55,
-    77.38,
+    77.43,
     77.3,
     77.29,
     76.78,
@@ -25545,12 +25664,13 @@
     64.05,
     63.89,
     63.82,
-    63.38,
     63.35,
     63.29,
     63.29,
     62.96,
     62.91,
+    62.81,
+    62.79,
     62.67,
     62.43,
     62.42,
@@ -25563,7 +25683,6 @@
     61.9,
     61.75,
     61.7,
-    61.68,
     61.65,
     61.61,
     61.5,
@@ -25674,6 +25793,7 @@
     50.11,
     50.09,
     50.05,
+    50.04,
     50.01,
     49.94,
     49.9,
@@ -25688,7 +25808,6 @@
     49.3,
     49.04,
     49,
-    48.93,
     48.64,
     48.62,
     48.55,
