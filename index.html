@@ -163,6 +163,11 @@
 
 <div class="card">
   <h2>成绩浮动（当前成绩换算）</h2>
+  <div class="controls" id="chartModes" style="margin-top:0">
+    <button class="case-btn" data-mode="day">按天</button>
+    <button class="case-btn active" data-mode="all">全部提交</button>
+    <button class="case-btn" data-mode="recent50">最近 50 次</button>
+  </div>
   <div class="chart-wrap"><canvas id="scoreChart"></canvas></div>
 </div>
 
@@ -374,6 +379,30 @@ function hideTooltip() {
   document.getElementById('tooltip').style.display = 'none';
 }
 
+let chartMode = 'all';
+
+function aggregateByDay(asc) {
+  // 当日聚合：最后成绩（榜面口径）/ 当日最优 / 当日最好排名 / 提交数
+  const days = [];
+  let cur = null;
+  for (const s of asc) {
+    const d = (s.create_time || '').slice(0, 10);
+    if (!cur || cur.day !== d) {
+      cur = { day: d, count: 0, best: null, bestRank: null, lastScore: null };
+      days.push(cur);
+    }
+    cur.count++;
+    if (s.status === 'Pass') {
+      const sc = s.current_score ?? s.score ?? 0;
+      if (cur.best == null || sc > cur.best) cur.best = sc;
+      const rk = s.current_ranking ?? null;
+      if (rk != null && (cur.bestRank == null || rk < cur.bestRank)) cur.bestRank = rk;
+      cur.lastScore = sc;
+    }
+  }
+  return days;
+}
+
 function renderChart(subs) {
   const ctx = document.getElementById('scoreChart').getContext('2d');
   if (scoreChart) scoreChart.destroy();
@@ -382,13 +411,25 @@ function renderChart(subs) {
   chartWrap.style.height = '360px';
 
   const oldestFirst = subs.slice().reverse(); // x-axis: oldest → newest (left to right)
-  const labels = oldestFirst.map(s => s.label);
-  const passData = oldestFirst.map(s => s.status === 'Pass' ? (s.current_score ?? s.score) : null);
-  const failData = oldestFirst.map(s => s.status !== 'Pass' ? null : null);
-  const rankData = oldestFirst.map(s => s.status === 'Pass' ? (s.current_ranking ?? null) : null);
+  let labels, dsLast, dsBest, dsRank, dayInfo = null;
 
-  const vals = passData.filter(v => v != null);
-  const rankVals = rankData.filter(v => v != null);
+  if (chartMode === 'day') {
+    const days = aggregateByDay(oldestFirst);
+    labels = days.map(d => d.day.slice(5));
+    dsLast = days.map(d => d.lastScore);
+    dsBest = days.map(d => d.best);
+    dsRank = days.map(d => d.bestRank);
+    dayInfo = days;
+  } else {
+    const arr = chartMode === 'recent50' ? oldestFirst.slice(-50) : oldestFirst;
+    labels = arr.map(s => s.label);
+    dsLast = arr.map(s => s.status === 'Pass' ? (s.current_score ?? s.score) : null);
+    dsBest = arr.map(() => null);
+    dsRank = arr.map(s => s.status === 'Pass' ? (s.current_ranking ?? null) : null);
+  }
+
+  const vals = [...dsLast, ...dsBest].filter(v => v != null);
+  const rankVals = dsRank.filter(v => v != null);
   let yMin = 0, yMax = 100;
   if (vals.length) {
     yMin = Math.min(...vals);
@@ -410,49 +451,52 @@ function renderChart(subs) {
     rankMax += pad;
   }
 
+  const datasets = [
+    {
+      label: '当日最后成绩',
+      data: dsLast,
+      borderColor: '#3fb950',
+      backgroundColor: 'rgba(63,185,80,0.1)',
+      fill: chartMode === 'day',
+      tension: chartMode === 'day' ? 0.25 : 0.3,
+      spanGaps: true,
+      pointRadius: chartMode === 'day' ? 4 : 2,
+      pointBackgroundColor: '#3fb950',
+      borderWidth: chartMode === 'day' ? 2.5 : 1.5,
+      yAxisID: 'y',
+    },
+  ];
+  if (chartMode === 'day') {
+    datasets.push({
+      label: '当日最优成绩',
+      data: dsBest,
+      borderColor: 'rgba(88,166,255,0.85)',
+      backgroundColor: 'rgba(88,166,255,0.12)',
+      borderDash: [4, 3],
+      borderWidth: 1.5,
+      pointRadius: 3,
+      fill: false,
+      tension: 0.25,
+      spanGaps: true,
+      yAxisID: 'y',
+    });
+  }
+  datasets.push({
+    label: '最好虚拟排名',
+    data: dsRank,
+    borderColor: '#58a6ff',
+    fill: false,
+    tension: 0.25,
+    spanGaps: true,
+    pointRadius: chartMode === 'day' ? 3 : 2,
+    borderDash: [6, 4],
+    yAxisID: 'y1',
+  });
+
   try {
     scoreChart = new Chart(ctx, {
       type: 'line',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: '当前成绩',
-            data: passData,
-            borderColor: '#3fb950',
-            backgroundColor: 'rgba(63,185,80,0.1)',
-            fill: true,
-            tension: 0.3,
-            spanGaps: true,
-            pointRadius: 5,
-            yAxisID: 'y',
-          },
-          {
-            label: '当前成绩 (Error)',
-            data: failData,
-            borderColor: '#f85149',
-            backgroundColor: 'rgba(248,81,73,0.05)',
-            fill: false,
-            tension: 0.3,
-            spanGaps: false,
-            pointRadius: 4,
-            pointStyle: 'rectRot',
-            yAxisID: 'y',
-          },
-          {
-            label: '虚拟排名',
-            data: rankData,
-            borderColor: '#58a6ff',
-            backgroundColor: 'rgba(88,166,255,0.1)',
-            fill: false,
-            tension: 0.3,
-            spanGaps: true,
-            pointRadius: 4,
-            borderDash: [6, 4],
-            yAxisID: 'y1',
-          }
-        ]
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         maintainAspectRatio: false,
@@ -465,6 +509,12 @@ function renderChart(subs) {
             borderWidth: 1,
             titleColor: '#e6edf3',
             bodyColor: '#e6edf3',
+            callbacks: dayInfo ? {
+              afterTitle: (items) => {
+                const d = dayInfo[items[0].dataIndex];
+                return d ? `当日提交 ${d.count} 次` : '';
+              },
+            } : {},
           }
         },
         scales: {
@@ -507,7 +557,7 @@ function caseTier(ratio) {
   const r = Math.round(c0[1] + (c1[1]-c0[1])*t);
   const g = Math.round(c0[2] + (c1[2]-c0[2])*t);
   const b = Math.round(c0[3] + (c1[3]-c0[3])*t);
-  const alpha = 0.42 + 0.22 * Math.min(Math.max((x - 1) / 0.6, 0), 1);
+  const alpha = 0.42 + 0.22 * Math.min(Math.max((x - 1) / 0.6, 0), 1); // 越差越实
   return { bg: `rgba(${r},${g},${b},${alpha.toFixed(2)})`, fg: '#ffffff' };
 }
 
@@ -532,7 +582,6 @@ function computeOurBest(subs) {
   }
   return { times: ourBest, score: cnt ? total / cnt : 0 };
 }
-
 function renderTable(subs) {
   const onlyPass = document.getElementById('onlyPass').checked;
   const tbody = document.querySelector('#detail-table tbody');
@@ -638,6 +687,14 @@ function renderTable(subs) {
 }
 
 document.getElementById('onlyPass').addEventListener('change', () => render());
+document.querySelectorAll('#chartModes .case-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    chartMode = btn.dataset.mode;
+    document.querySelectorAll('#chartModes .case-btn').forEach(b =>
+      b.classList.toggle('active', b === btn));
+    if (rawData) render();
+  });
+});
 
 function showSource(sid) {
   const s = rawData.submissions.find(x => x.id === sid);
