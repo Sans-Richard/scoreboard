@@ -14234,7 +14234,7 @@
         }
       ],
       "current_score": 65.7,
-      "current_ranking": 62
+      "current_ranking": 61
     },
     {
       "id": "6aa77f342d3dd2c5aebb8ada",
@@ -19113,7 +19113,7 @@
         }
       ],
       "current_score": 73.92,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6ab61082694b590c3c896b11",
@@ -19470,7 +19470,7 @@
         }
       ],
       "current_score": 74.02,
-      "current_ranking": 16
+      "current_ranking": 17
     },
     {
       "id": "6ab61b47694b590c3c8eaed5",
@@ -22564,7 +22564,7 @@
         }
       ],
       "current_score": 73.98,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abd1149694b590c3c6644f1",
@@ -23754,7 +23754,7 @@
         }
       ],
       "current_score": 73.98,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abdccbb694b590c3cadbcfb",
@@ -23873,7 +23873,7 @@
         }
       ],
       "current_score": 73.91,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abdcd34694b590c3cadec09",
@@ -25182,7 +25182,7 @@
         }
       ],
       "current_score": 73.97,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abdf228694b590c3cbdc318",
@@ -25420,7 +25420,7 @@
         }
       ],
       "current_score": 73.95,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abe26dd694b590c3cdad953",
@@ -25539,7 +25539,7 @@
         }
       ],
       "current_score": 73.97,
-      "current_ranking": 17
+      "current_ranking": 18
     },
     {
       "id": "6abe274c694b590c3cdb0cee",
@@ -26134,7 +26134,7 @@
         }
       ],
       "current_score": 74.07,
-      "current_ranking": 16
+      "current_ranking": 17
     },
     {
       "id": "6abe3167694b590c3cdff5f2",
@@ -30656,7 +30656,7 @@
         }
       ],
       "current_score": 74.03,
-      "current_ranking": 16
+      "current_ranking": 17
     },
     {
       "id": "6abfc56b694b590c3ca2a5c4",
@@ -31727,7 +31727,7 @@
         }
       ],
       "current_score": 74.0,
-      "current_ranking": 16
+      "current_ranking": 17
     },
     {
       "id": "6abfc949694b590c3ca51413",
@@ -31846,7 +31846,126 @@
         }
       ],
       "current_score": 73.9,
-      "current_ranking": 17
+      "current_ranking": 18
+    },
+    {
+      "id": "6abfc9b7694b590c3ca54fb7",
+      "create_time": "2026-10-02T15:13:37.928763Z",
+      "label": "10-02 23:13",
+      "status": "Pass",
+      "submitter": "琉暝",
+      "score": 74.11,
+      "ranking": 16,
+      "team_score": 74.11,
+      "cases": [
+        {
+          "time": 2.05,
+          "best_time": 1.27,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.35,
+          "best_time": 1.95,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.6,
+          "best_time": 2.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.44,
+          "best_time": 4.14,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 5.76,
+          "best_time": 5.2,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.76,
+          "best_time": 9.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.26,
+          "best_time": 11.19,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 32.96,
+          "best_time": 30.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.16,
+          "best_time": 67.79,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.81,
+          "best_time": 46.63,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 135.72,
+          "best_time": 126.8,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 80.14,
+          "best_time": 75.93,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 424.41,
+          "best_time": 392.72,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3838.37,
+          "best_time": 3656.9,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8930.76,
+          "best_time": 7948.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "current_score": 74.11,
+      "current_ranking": 16
     }
   ],
   "leaderboard": [
@@ -33402,8 +33521,8 @@
   "quota": {
     "date": "2026-10-02",
     "total": 50,
-    "used": 15,
-    "account_id": "member1"
+    "used": 14,
+    "account_id": "member2"
   },
   "team": {
     "team_name": "thelikeing 的队伍",
@@ -33445,8 +33564,8 @@
     74.9,
     74.32,
     74.17,
+    74.11,
     73.99,
-    73.9,
     73.89,
     73.54,
     73.47,
@@ -33490,7 +33609,6 @@
     66.92,
     66.02,
     65.93,
-    65.87,
     65.59,
     65.48,
     65.37,
@@ -33501,6 +33619,7 @@
     64.24,
     64.11,
     64.06,
+    63.97,
     63.4,
     63.38,
     63.38,
@@ -33634,6 +33753,7 @@
     51.36,
     51.21,
     51.14,
+    50.98,
     50.81,
     50.43,
     50.16,
@@ -33652,7 +33772,6 @@
     48.96,
     48.95,
     48.91,
-    48.88,
     48.76,
     48.76,
     48.68,
@@ -33751,7 +33870,7 @@
     35.3,
     35.3,
     35.18,
-    34.65,
+    34.66,
     33.8,
     33.65,
     33.64,
@@ -33808,6 +33927,7 @@
     14.91,
     9.11,
     7.94,
+    0,
     0,
     0,
     0,
