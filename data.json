@@ -3645,7 +3645,7 @@
       ],
       "submitter": "琉暝",
       "current_score": 44.5,
-      "current_ranking": 277
+      "current_ranking": 276
     },
     {
       "id": "6aa36a7c2d3dd2c5ae765dc6",
@@ -16971,7 +16971,7 @@
         }
       ],
       "current_score": 67.95,
-      "current_ranking": 50
+      "current_ranking": 49
     },
     {
       "id": "6aae1afeb0477ec41eb7239e",
@@ -39589,6 +39589,125 @@
         }
       ],
       "current_score": 73.42,
+      "current_ranking": 18
+    },
+    {
+      "id": "6ac0f87b694b590c3c3a377f",
+      "create_time": "2026-10-03T12:45:25.492948Z",
+      "label": "10-03 20:45",
+      "status": "Pass",
+      "submitter": "ruinward",
+      "score": 73.43,
+      "ranking": 17,
+      "team_score": 73.43,
+      "cases": [
+        {
+          "time": 2,
+          "best_time": 1.26,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.48,
+          "best_time": 1.9,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 2.56,
+          "best_time": 2.47,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8.42,
+          "best_time": 4.14,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 5.8,
+          "best_time": 5.2,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 12.73,
+          "best_time": 9.62,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 17.45,
+          "best_time": 11.02,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 33.3,
+          "best_time": 30.16,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 70.59,
+          "best_time": 67.79,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 49.48,
+          "best_time": 46.63,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 136.66,
+          "best_time": 126.8,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 79.86,
+          "best_time": 75.93,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 426.32,
+          "best_time": 392.72,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 3838.67,
+          "best_time": 3646.2,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        },
+        {
+          "time": 8942.14,
+          "best_time": 7948.23,
+          "status": "Pass",
+          "precision": 1,
+          "msg": null
+        }
+      ],
+      "current_score": 73.43,
       "current_ranking": 17
     }
   ],
@@ -41145,8 +41264,8 @@
   "quota": {
     "date": "2026-10-03",
     "total": 50,
-    "used": 16,
-    "account_id": "member3"
+    "used": 15,
+    "account_id": "member1"
   },
   "team": {
     "team_name": "thelikeing 的队伍",
@@ -41189,7 +41308,7 @@
     74.2,
     73.78,
     73.75,
-    73.42,
+    73.43,
     73.37,
     73.22,
     73.13,
@@ -41211,19 +41330,19 @@
     70.85,
     70.48,
     70.11,
-    70.08,
+    69.91,
     69.47,
-    69.33,
+    69.37,
     69.31,
     69.17,
     68.67,
     68.32,
     68.23,
     68.12,
-    68.05,
     67.99,
     67.91,
     67.58,
+    67.54,
     67.23,
     67.11,
     66.87,
@@ -41446,11 +41565,11 @@
     44.82,
     44.8,
     44.79,
-    44.66,
     44.63,
     44.6,
     44.5,
     44.29,
+    44.17,
     43.64,
     43.48,
     43.26,
