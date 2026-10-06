@@ -259,8 +259,9 @@ function render() {
 
 function computeStats(subs) {
   let bestScore = 0, passCount = 0;
-  // subs 已按 create_time 降序（最新在前），取第一个为最新提交
-  const last = subs[0];
+  // subs 已按 create_time 降序（最新在前）。最新提交可能仍在 Running（current_score 为 0），
+  // 因此「当前成绩 / 队伍排名」回退到最近一次 Pass 的提交，避免显示成 0 / '-'。
+  const lastPass = subs.find(s => s.status === 'Pass');
   for (const s of subs) {
     // 历史最优用实时成绩（current_score 会随全局最优变动重算），兼容旧记录回退到 score
     const sc = s.status === 'Pass' ? (s.current_score ?? s.score ?? 0) : 0;
@@ -268,8 +269,8 @@ function computeStats(subs) {
     if (s.status === 'Pass') passCount++;
   }
   return {
-    currentScore: last?.current_score ?? 0,
-    currentRank: last?.current_ranking,
+    currentScore: lastPass?.current_score ?? lastPass?.score ?? 0,
+    currentRank: lastPass?.current_ranking,
     bestScore,
     passCount,
   };
