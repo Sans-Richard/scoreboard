@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Sanitize scoreboard data.json and push to GitHub for Vercel deployment."""
+import hashlib
 import json
 import subprocess
 import sys
@@ -33,6 +34,11 @@ def sanitize(data):
     
     # Drop fields from each submission
     for sub in data.get('submissions', []):
+        # Keep a hash of the source so the remote board can group identical
+        # code without exposing the source itself.
+        source = sub.get('source')
+        if source:
+            sub['source_hash'] = hashlib.sha256(source.encode('utf-8')).hexdigest()
         for field in SUBMISSION_FIELDS_TO_DROP:
             sub.pop(field, None)
     
@@ -53,12 +59,12 @@ def main():
     with open(TARGET_DATA, 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    # Git operations
-    subprocess.run(['git', 'add', 'data.json'], cwd=REPO_DIR, check=True)
+    # Git operations (data + page template, so index.html style edits ship too)
+    subprocess.run(['git', 'add', 'data.json', 'index.html'], cwd=REPO_DIR, check=True)
     
     # Check if there are changes
     result = subprocess.run(
-        ['git', 'diff', '--quiet', '--cached', 'data.json'],
+        ['git', 'diff', '--quiet', '--cached'],
         cwd=REPO_DIR
     )
     
