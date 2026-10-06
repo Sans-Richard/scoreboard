@@ -114,6 +114,11 @@
   .code-num { color: var(--muted); text-align: right; padding-right: 16px; min-width: 48px;
     user-select: none; border-right: 1px solid var(--border); margin-right: 12px; flex-shrink: 0; }
   .code-text { white-space: pre-wrap; word-break: break-all; color: var(--text); }
+  .perf-summary-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  .perf-summary-table th, .perf-summary-table td { border: 1px solid var(--border);
+    padding: 4px 8px; text-align: left; }
+  .perf-summary-table th { background: #21262d; }
+  .perf-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -188,7 +193,7 @@
       <thead>
         <tr>
           <th>提交</th><th>时间</th><th>状态</th><th>提交者</th><th>提交时成绩</th><th>当前成绩</th>
-          <th>虚拟排名</th><th>源码</th><th colspan="15">15 个 Case（time / 实时最优）</th>
+          <th>虚拟排名</th><th>同代码</th><th colspan="15">15 个 Case（time / 实时最优）</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -198,14 +203,14 @@
 
 <div class="tooltip" id="tooltip"></div>
 
-<div class="modal-overlay" id="srcModal" onclick="if (event.target === this) hideSource()">
+<div class="modal-overlay" id="sameModal" onclick="if (event.target === this) hideSame()">
   <div class="modal">
     <div class="modal-header">
-      <h3 id="srcModalTitle">源码</h3>
-      <button class="modal-close" onclick="hideSource()">✕</button>
+      <h3 id="sameModalTitle">同代码提交</h3>
+      <button class="modal-close" onclick="hideSame()">✕</button>
     </div>
     <div class="modal-body">
-      <div id="srcWrap" class="code-wrap"></div>
+      <div id="sameBody"></div>
     </div>
   </div>
 </div>
@@ -213,6 +218,7 @@
 <script>
 let rawData = null;
 let scoreChart = null;
+let sourceGroups = null;   // source_hash -> 同源码提交数组（源码本身不上传）
 
 const fmt = (v, d=2) => (v == null ? '-' : Number(v).toFixed(d));
 
@@ -220,7 +226,18 @@ async function load() {
   // 静态站点版本：直接从 data.json 加载（数据由提交时自动更新）
   const res = await fetch('data.json', {cache: 'no-store'});
   rawData = await res.json();
+  buildSourceGroups();
   render();
+}
+
+function buildSourceGroups() {
+  sourceGroups = new Map();
+  for (const s of rawData.submissions) {
+    if (!s.source_hash) continue;
+    let arr = sourceGroups.get(s.source_hash);
+    if (!arr) { arr = []; sourceGroups.set(s.source_hash, arr); }
+    arr.push(s);
+  }
 }
 
 function render() {
@@ -660,7 +677,9 @@ function renderTable(subs) {
       <td>${isErr?'error':fmt(s.score)}</td>
       <td style="color:var(--green)">${isErr?'error':fmt(s.current_score)}</td>
       <td>#${s.current_ranking ?? '-'}</td>
-      <td><button class="src-btn" onclick="showSource('${s.id}')" ${s.source ? '' : 'disabled'}>${s.source ? '源码' : '—'}</button></td>`;
+      <td><button class="src-btn" ${s.source_hash ? '' : 'disabled'}>${s.source_hash ? '详细' : '—'}</button></td>`;
+    tr.style.cursor = s.source_hash ? 'pointer' : 'default';
+    if (s.source_hash) tr.addEventListener('click', () => showSameCode(s.id));
     const td = document.createElement('td');
     td.colSpan = 15;
     if (isErr) {
@@ -696,21 +715,86 @@ document.querySelectorAll('#chartModes .case-btn').forEach(btn => {
   });
 });
 
-function showSource(sid) {
+function showSameCode(sid) {
   const s = rawData.submissions.find(x => x.id === sid);
-  if (!s || !s.source) return;
-  document.getElementById('srcModalTitle').textContent = s.label + ' — ' + s.id.slice(-6);
-  const wrap = document.getElementById('srcWrap');
-  const lines = s.source.split('\n');
-  // cap at 5000 lines to avoid massive DOM
-  const display = lines.length > 5000 ? lines.slice(0, 5000) : lines;
-  wrap.innerHTML = display.map((line, i) =>
-    `<div class="code-line"><span class="code-num">${i + 1}</span><span class="code-text">${line || ' '}</span></div>`
-  ).join('');
-  document.getElementById('srcModal').style.display = 'flex';
+  if (!s) return;
+  const title = document.getElementById('sameModalTitle');
+  const body = document.getElementById('sameBody');
+  if (!s.source_hash) {
+    title.textContent = s.label + ' — ' + s.id.slice(-6) + '（同代码提交）';
+    body.innerHTML = '<div class="perf-note">该提交未保存源码，无法匹配同代码提交。</div>';
+    document.getElementById('sameModal').style.display = 'flex';
+    return;
+  }
+  const group = (sourceGroups.get(s.source_hash) || []).slice()
+    .sort((a, b) => b.create_time.localeCompare(a.create_time));
+  const passes = group.filter(x => x.status === 'Pass');
+  title.textContent = s.label + ' — ' + s.id.slice(-6) + '（同代码提交 ' + group.length + ' 次）';
+  const gbest = rawData.global_best_times || [];
+
+  // case 级统计：同源码的 Pass 提交在同一个 case 上的时间分布（分析平台测量误差）
+  let html = `<div style="margin-bottom:8px;font-size:13px">共 ${group.length} 次提交使用相同源码（Pass ${passes.length} 次；点击成员行可查看该提交详情）</div>`;
+  html += '<table class="perf-summary-table"><thead><tr>' +
+    '<th>Case</th><th>样本</th><th>均值(μs)</th><th>标准差</th><th>最小</th><th>最大</th><th>极差</th><th>实时最优</th>' +
+    '</tr></thead><tbody>';
+  for (let i = 0; i < 15; i++) {
+    const ts = passes.map(x => x.cases[i] && x.cases[i].time > 0 ? x.cases[i].time : null)
+      .filter(v => v != null);
+    const bt = (gbest.length > i && gbest[i] > 0) ? gbest[i] : null;
+    if (!ts.length) {
+      html += `<tr><td>Case ${i+1}</td><td colspan="7" style="color:var(--muted)">无 Pass 数据</td></tr>`;
+      continue;
+    }
+    const mean = ts.reduce((a, b) => a + b, 0) / ts.length;
+    const sd = ts.length > 1 ? Math.sqrt(ts.reduce((a, b) => a + (b - mean) * (b - mean), 0) / (ts.length - 1)) : 0;
+    const mn = Math.min(...ts), mx = Math.max(...ts);
+    const tier = bt ? caseTier(mn / bt) : null;
+    const minStyle = tier ? `background:${tier.bg};color:${tier.fg}` : '';
+    html += `<tr><td>Case ${i+1}</td><td>${ts.length}</td>` +
+      `<td>${fmt(mean,3)}</td><td>${fmt(sd,3)}</td>` +
+      `<td style="${minStyle};font-weight:600">${fmt(mn,3)}</td><td>${fmt(mx,3)}</td>` +
+      `<td>${fmt(mx-mn,3)}</td><td>${bt ? fmt(bt,2) : '-'}</td></tr>`;
+  }
+  html += '</tbody></table>';
+
+  // 成员提交列表
+  html += '<div style="margin:12px 0 6px;font-size:13px;color:var(--muted)">成员提交</div>';
+  html += '<table class="perf-summary-table"><thead><tr>' +
+    '<th>提交</th><th>状态</th><th>提交者</th><th>成绩</th><th>耗时(μs)</th>' +
+    '</tr></thead><tbody>';
+  for (const g of group) {
+    const isErr = g.status !== 'Pass';
+    let times;
+    if (isErr) {
+      times = `<span style="color:var(--red)">${g.status}</span>`;
+    } else {
+      times = '<div class="case-grid" style="grid-template-columns:repeat(15,minmax(34px,1fr))">';
+      (g.cases || []).forEach((c, i) => {
+        const bt = (gbest.length > i && gbest[i] > 0) ? gbest[i] : (c.best_time || 0);
+        const ratio = (bt > 0 && c.time > 0) ? (c.time / bt) : null;
+        const tier = ratio != null ? caseTier(ratio) : null;
+        const style = (tier ? `background:${tier.bg};color:${tier.fg}` : 'color:var(--text)') +
+          (c.status !== 'Pass' ? ';font-weight:600' : '');
+        times += `<div class="case-cell" style="${style}" ` +
+          `title="Case ${i+1}: ${fmt(c.time,3)} / ${fmt(bt,3)} μs (ratio ${ratio!=null?ratio.toFixed(2):'-'})">` +
+          `${fmt(c.time,2)}</div>`;
+      });
+      times += '</div>';
+    }
+    html += `<tr style="cursor:pointer" onclick="showSameCode('${g.id}')">` +
+      `<td>${g.label} <span style="color:var(--muted);font-size:11px">${g.create_time.replace('T',' ').slice(5,16)}</span>` +
+      (g.id === s.id ? ' <span class="badge pass">当前</span>' : '') + '</td>' +
+      `<td><span class="badge ${g.status==='Pass'?'pass':'fail'}">${isErr?'error':g.status}</span></td>` +
+      `<td>${g.submitter || '-'}</td>` +
+      `<td>${isErr?'error':fmt(g.current_score)}</td>` +
+      `<td style="min-width:560px">${times}</td></tr>`;
+  }
+  html += '</tbody></table>';
+  body.innerHTML = html;
+  document.getElementById('sameModal').style.display = 'flex';
 }
-function hideSource() {
-  document.getElementById('srcModal').style.display = 'none';
+function hideSame() {
+  document.getElementById('sameModal').style.display = 'none';
 }
 load();
 </script>
