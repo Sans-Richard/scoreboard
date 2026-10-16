@@ -784,32 +784,38 @@ function drawBestArrows() {
     const fr = fromEl.getBoundingClientRect();
     const tr = toEl.getBoundingClientRect();
     // 数字前空隙：从 cell 左缘内侧垂直走，避免遮挡数字
-    const x1 = fr.left - wr.left + 5;
-    const x2 = tr.left - wr.left + 5;
+    const x = fr.left - wr.left + 5;
     let y1 = fr.top - wr.top + fr.height;
     let y2 = tr.top - wr.top;
-    // 来源在视口外时，把箭头终点收到视口边缘并加圆点指示方向（全局渲染）
+    if (x < -60 || x > W + 60) continue;
+    const toFar = y2 < -24 || y2 > H + 24;   // 来源行完全在视口外
+    if (toFar) {
+      // 来源行不可见：在数字前空隙画方向徽标（全局可见指向），不画长箭头
+      const dir = y2 < 0 ? '\u2191' : '\u2193';
+      const t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', x);
+      t.setAttribute('y', fr.top - wr.top + fr.height / 2 + 4);
+      t.setAttribute('font-size', '11'); t.setAttribute('fill', '#58a6ff');
+      t.setAttribute('font-weight', 'bold'); t.setAttribute('text-anchor', 'middle');
+      t.setAttribute('style', 'pointer-events:none');
+      t.textContent = dir;
+      svg.appendChild(t);
+      continue;
+    }
+    // 来源行可见（含刚滚出边缘）：clamp 到视口边缘画箭头
     const fromOut = y1 < 0 || y1 > H;
-    const toOut = y2 < 0 || y2 > H;
     if (y1 < 0) y1 = 0;
     if (y1 > H) y1 = H;
     if (y2 < 0) y2 = 0;
     if (y2 > H) y2 = H;
-    if (x1 < -60 || x1 > W + 60 || x2 < -60 || x2 > W + 60) continue;
-    if (fromOut && toOut && Math.abs(y2 - y1) < 1) continue;
+    if (fromOut && Math.abs(y2 - y1) < 1) continue;
     const mid = y1 + (y2 - y1) / 2;
     const p = document.createElementNS(NS, 'path');
-    p.setAttribute('d', `M${x1},${y1} C${x1},${mid} ${x2},${mid} ${x2},${y2}`);
+    p.setAttribute('d', `M${x},${y1} C${x},${mid} ${x},${mid} ${x},${y2}`);
     p.setAttribute('stroke', '#58a6ff'); p.setAttribute('stroke-width', '1.5');
     p.setAttribute('fill', 'none'); p.setAttribute('opacity', '0.75');
     p.setAttribute('marker-end', 'url(#best-arrowhead)');
     svg.appendChild(p);
-    if (toOut) {
-      const c = document.createElementNS(NS, 'circle');
-      c.setAttribute('cx', x2); c.setAttribute('cy', y2);
-      c.setAttribute('r', '3.5'); c.setAttribute('fill', '#58a6ff');
-      svg.appendChild(c);
-    }
   }
   wrap.appendChild(svg);
 }
