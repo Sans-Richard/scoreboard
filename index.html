@@ -752,20 +752,22 @@ function renderTable(subs) {
 // 提交明细中「我们理论最优」每个 case 画箭头指向产生该最优值的提交行
 function drawBestArrows() {
   const wrap = document.getElementById('table-wrap');
-  let svg = wrap.querySelector('svg.best-arrow-svg');
-  if (svg) { svg.remove(); svg = null; }
+  const old = wrap.querySelector('svg.best-arrow-svg');
+  if (old) old.remove();
   if (!window._ourBestRow || !window._ourBest) return;
   const ours = window._ourBest;
   const wr = wrap.getBoundingClientRect();
-  svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  const W = wr.width, H = wr.height;
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('class', 'best-arrow-svg');
-  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
-  const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+  const defs = document.createElementNS(NS, 'defs');
+  const marker = document.createElementNS(NS, 'marker');
   marker.setAttribute('id', 'best-arrowhead');
   marker.setAttribute('markerWidth', '8'); marker.setAttribute('markerHeight', '8');
   marker.setAttribute('refX', '7'); marker.setAttribute('refY', '4');
   marker.setAttribute('orient', 'auto');
-  const mp = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  const mp = document.createElementNS(NS, 'path');
   mp.setAttribute('d', 'M0,0 L8,4 L0,8');
   mp.setAttribute('fill', '#58a6ff');
   marker.appendChild(mp); defs.appendChild(marker);
@@ -781,18 +783,33 @@ function drawBestArrows() {
     if (!fromEl || !toEl) continue;
     const fr = fromEl.getBoundingClientRect();
     const tr = toEl.getBoundingClientRect();
-    const x1 = fr.left - wr.left + fr.width / 2;
-    const y1 = fr.top - wr.top + fr.height;
-    const x2 = tr.left - wr.left + tr.width / 2;
-    const y2 = tr.top - wr.top;
-    if (y1 < -40 || y2 > wr.height + 40 || x1 < -60 || x1 > wr.width + 60 || x2 < -60 || x2 > wr.width + 60) continue;
+    // 数字前空隙：从 cell 左缘内侧垂直走，避免遮挡数字
+    const x1 = fr.left - wr.left + 5;
+    const x2 = tr.left - wr.left + 5;
+    let y1 = fr.top - wr.top + fr.height;
+    let y2 = tr.top - wr.top;
+    // 来源在视口外时，把箭头终点收到视口边缘并加圆点指示方向（全局渲染）
+    const fromOut = y1 < 0 || y1 > H;
+    const toOut = y2 < 0 || y2 > H;
+    if (y1 < 0) y1 = 0;
+    if (y1 > H) y1 = H;
+    if (y2 < 0) y2 = 0;
+    if (y2 > H) y2 = H;
+    if (x1 < -60 || x1 > W + 60 || x2 < -60 || x2 > W + 60) continue;
+    if (fromOut && toOut && Math.abs(y2 - y1) < 1) continue;
     const mid = y1 + (y2 - y1) / 2;
-    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const p = document.createElementNS(NS, 'path');
     p.setAttribute('d', `M${x1},${y1} C${x1},${mid} ${x2},${mid} ${x2},${y2}`);
     p.setAttribute('stroke', '#58a6ff'); p.setAttribute('stroke-width', '1.5');
     p.setAttribute('fill', 'none'); p.setAttribute('opacity', '0.75');
     p.setAttribute('marker-end', 'url(#best-arrowhead)');
     svg.appendChild(p);
+    if (toOut) {
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', x2); c.setAttribute('cy', y2);
+      c.setAttribute('r', '3.5'); c.setAttribute('fill', '#58a6ff');
+      svg.appendChild(c);
+    }
   }
   wrap.appendChild(svg);
 }
