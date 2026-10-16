@@ -77,6 +77,9 @@
   .badge { padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; }
   .badge.pass { background: rgba(63,185,80,0.15); color: var(--green); }
   .badge.fail { background: rgba(248,81,73,0.15); color: var(--red); }
+  #table-wrap { position: relative; }
+  .best-arrow-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 6; overflow: visible; }
+  .best-src-mark { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #58a6ff; margin-left: 3px; vertical-align: middle; }
   .case-grid { display: grid; grid-template-columns: repeat(15, minmax(46px, 1fr)); gap: 4px; }
   .case-cell { text-align: center; font-size: 11px; padding: 4px 2px; border-radius: 4px; }
   .case-cell .t { color: var(--text); }
@@ -612,7 +615,13 @@ function computeOurBest(subs) {
   for (const s of subs) {
     if (s.status !== 'Pass') continue;
     (s.cases || []).forEach((c, i) => {
-      if (c.time > 0 && (ourBest[i] == null || c.time < ourBest[i])) { ourBest[i] = c.time; sources[i] = s; }
+      if (c.time > 0) {
+        if (ourBest[i] == null || c.time < ourBest[i]) { ourBest[i] = c.time; sources[i] = s; }
+        else if (c.time === ourBest[i] && (!sources[i] ||
+                 (s.create_time || '').localeCompare(sources[i].create_time || '') > 0)) {
+          sources[i] = s;   // 多个提交同最优值：指向时间最晚的提交
+        }
+      }
     });
   }
   // 评分：case_score = 100 / (1 + log_1.5(t/b))，15 个 case 取平均
@@ -692,12 +701,15 @@ function renderTable(subs) {
     otd.innerHTML = ocells;
     otr.appendChild(otd);
     tbody.appendChild(otr);
+    window._ourBestRow = otr;
+    window._ourBest = ours;
   }
 
   const rows = onlyPass ? subs.filter(s => s.status === 'Pass') : subs;
 
   for (const s of rows) {
     const tr = document.createElement('tr');
+    tr.setAttribute('data-sid', s.id);
     const cases = s.cases || [];
     const isErr = s.status !== 'Pass';
     tr.innerHTML = `
@@ -734,9 +746,59 @@ function renderTable(subs) {
     tr.appendChild(td);
     tbody.appendChild(tr);
   }
+  drawBestArrows();
+}
+
+// 提交明细中「我们理论最优」每个 case 画箭头指向产生该最优值的提交行
+function drawBestArrows() {
+  const wrap = document.getElementById('table-wrap');
+  let svg = wrap.querySelector('svg.best-arrow-svg');
+  if (svg) { svg.remove(); svg = null; }
+  if (!window._ourBestRow || !window._ourBest) return;
+  const ours = window._ourBest;
+  const wr = wrap.getBoundingClientRect();
+  svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'best-arrow-svg');
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+  marker.setAttribute('id', 'best-arrowhead');
+  marker.setAttribute('markerWidth', '8'); marker.setAttribute('markerHeight', '8');
+  marker.setAttribute('refX', '7'); marker.setAttribute('refY', '4');
+  marker.setAttribute('orient', 'auto');
+  const mp = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  mp.setAttribute('d', 'M0,0 L8,4 L0,8');
+  mp.setAttribute('fill', '#58a6ff');
+  marker.appendChild(mp); defs.appendChild(marker);
+  svg.appendChild(defs);
+  const fromGrid = window._ourBestRow.querySelector('.case-grid');
+  for (let i = 0; i < 15; i++) {
+    const src = ours.sources[i];
+    if (!src) continue;
+    const fromEl = fromGrid && fromGrid.children[i];
+    const srcTr = wrap.querySelector('tr[data-sid="' + src.id + '"]');
+    const srcGrid = srcTr && srcTr.querySelector('.case-grid');
+    const toEl = srcGrid ? srcGrid.children[i] : null;
+    if (!fromEl || !toEl) continue;
+    const fr = fromEl.getBoundingClientRect();
+    const tr = toEl.getBoundingClientRect();
+    const x1 = fr.left - wr.left + fr.width / 2;
+    const y1 = fr.top - wr.top + fr.height;
+    const x2 = tr.left - wr.left + tr.width / 2;
+    const y2 = tr.top - wr.top;
+    if (y1 < -40 || y2 > wr.height + 40 || x1 < -60 || x1 > wr.width + 60 || x2 < -60 || x2 > wr.width + 60) continue;
+    const mid = y1 + (y2 - y1) / 2;
+    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('d', `M${x1},${y1} C${x1},${mid} ${x2},${mid} ${x2},${y2}`);
+    p.setAttribute('stroke', '#58a6ff'); p.setAttribute('stroke-width', '1.5');
+    p.setAttribute('fill', 'none'); p.setAttribute('opacity', '0.75');
+    p.setAttribute('marker-end', 'url(#best-arrowhead)');
+    svg.appendChild(p);
+  }
+  wrap.appendChild(svg);
 }
 
 document.getElementById('onlyPass').addEventListener('change', () => render());
+document.getElementById('table-wrap').addEventListener('scroll', () => requestAnimationFrame(drawBestArrows));
 document.querySelectorAll('#chartModes .case-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     chartMode = btn.dataset.mode;
